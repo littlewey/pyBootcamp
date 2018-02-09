@@ -1,8 +1,12 @@
-# Task 2, create a blockchain
+---
+title: "Keynote: Build a blockchain"
+date: 2018-02-09T19:11:59+08:00
+weight: 2
+---
 
 > Our task demo is highly reusing code and even some words in https://hackernoon.com/learn-blockchains-by-building-one-117428612f46 (many thanks to [Daniel van Flymen](https://hackernoon.com/@vanflymen?source=post_header_lockup)), some enhancements were added on top of that here including sender address verification, and some script clients.
 
-In this task, we will create a simple part of blockchain application like `bitcoin`. 
+In this task, we will create a simple part of blockchain application like `bitcoin`.
 
 Things we will go though:
 
@@ -81,15 +85,15 @@ class Blockchain:
     def __init__(self):
         self.chain = []
         self.transactionsPool = []
-        
+
     def new_block(self):
         # build a new Block and adds it to the chain
         pass
-    
+
     def new_transaction_by_mining(self):
         # Adds a new transaction to the list of transactions
         pass
-    
+
     @staticmethod
     def hash(block):
         # Hashes a Block
@@ -162,7 +166,7 @@ etc.
 
 We used a simpfied and already known solution: http API server, provided by flask.
 
-#### 2.3.1 Endpoints 
+#### 2.3.1 Endpoints
 
 Endpoints to be implemented.
 
@@ -198,7 +202,7 @@ blockchain = Blockchain()
 @app.route('/mine', methods=['GET'])
 def mine():
     return "We'll mine a new Block"
-  
+
 @app.route('/transactions/new', methods=['POST'])
 def new_transaction():
     return "We'll add a new transaction"
@@ -289,7 +293,7 @@ It actually appends a the transaction as a new `dict` to the list `transactionsP
 
 This method should be called on two conditions:
 
-- mining 
+- mining
 - wallet owner (user) triggerred transaction
 
 We'll implement that later on corresponding endpoints in `node.py`
@@ -297,7 +301,7 @@ We'll implement that later on corresponding endpoints in `node.py`
 ```python
 class Blockchain:
     #...
-    
+
     def new_transaction(self, sender, recipient, amount):
         """
         Creates a new transaction to go into the next mined Block
@@ -356,7 +360,7 @@ class Blockchain:
 
         self.chain.append(block)
         return block
-    
+
     def new_transaction(self, sender, recipient, amount):
         """
         Creates a new transaction to go into the next mined Block
@@ -372,7 +376,7 @@ class Blockchain:
             'amount': amount,
         })
 
-    
+
     @staticmethod
     def hash(block):
         """
@@ -466,11 +470,11 @@ from config import difficulty
             proof += 1
 
         return proof
-    
+
     @property
     def last_block(self):
         return self.chain[-1]
-    
+
     @staticmethod
     def valid_proof(last_proof, proof, last_hash):
         """
@@ -564,7 +568,7 @@ Then it should recieve like this:
 }
 ```
 
-If input is in good format, do the verification with transaction, signature and public key(my address). 
+If input is in good format, do the verification with transaction, signature and public key(my address).
 
 Then, if verification passed: continue the transaction creation by calling the `blockchain.new_transaction()` with transaction without signature as below:
 
@@ -596,7 +600,7 @@ def new_transaction():
         return 'Missing values', 400
 
     sender    = values['sender']
-    recipient = values['recipient'] 
+    recipient = values['recipient']
     amount    = values['amount']
     signature = values['signature']
 
@@ -707,10 +711,10 @@ class Wallet:
                 if type(privateKeyB64) is str \
                 else privateKeyB64
             self.privateKey, self.privateKeyB64 = base64.b64decode(privateKeyB64), privateKeyB64
-            
+
             # Instatiate _rsa by import private key
             self._rsa = RSA.importKey(self.privateKey)
-        
+
         # If it's a new instance, generate one.
         else:
             randomGenerator = Random.new().read
@@ -743,9 +747,9 @@ Then let's finish the part for signature:
 
 `signature()` method relays on the generated or imported rsa instance, the signer could be instantiated with `PKCS1_v1_5` with rsa instance as the input.
 
-The signature method purpose was to sign the transaction with private key to prove the sender of a transaction actually own the sender address. 
+The signature method purpose was to sign the transaction with private key to prove the sender of a transaction actually own the sender address.
 
-And here we hashed transaction once with MD5(done before coming into this method, will show later). 
+And here we hashed transaction once with MD5(done before coming into this method, will show later).
 
 Please note in bitcoin this whole process are much complex yet basically do different times of changes like( hash, hash the hased value again, get pre-fix of that value, hash … , sign the value with private key, sign with other private key etc...)
 
@@ -782,7 +786,7 @@ Steps explained:
         :param sender:    <str> sender part of transaction to be verified
         :param recipient: <str> recipient part of transaction to be verified
         :param amount:    <str> amount part of transaction to be verified
-        :param signature: <str> signature to be verified, it was encoded in base64 
+        :param signature: <str> signature to be verified, it was encoded in base64
 
         """
         transaction = "".join([str(part) for part in [sender, recipient, amount]]).encode()
@@ -792,7 +796,7 @@ Steps explained:
         _rsa = RSA.importKey(base64.b64decode(sender.encode()))
         verifier = PKCS1_v1_5.new(_rsa)
         return verifier.verify(
-            hashedTransaction, 
+            hashedTransaction,
             base64.b64decode(signature.encode())
             )
 ```
@@ -886,7 +890,7 @@ a. run rc to initiate
 $ . rc
 ```
 
-It will ask the node.py address, just type/paste it and enter. For example 
+It will ask the node.py address, just type/paste it and enter. For example
 
 ```bash
 http://localhost:5000
@@ -949,7 +953,7 @@ This is very cool. We’ve got a basic Blockchain that accepts transactions and 
 
 Before we can implement a Consensus Algorithm, we need a way to let a node know about neighbouring nodes on the network. Each node on our network should keep a registry of other nodes on the network. Thus, we’ll need some more endpoints:
 
-1. `/nodes`                  to fetch all neighbor nodes. 
+1. `/nodes`                  to fetch all neighbor nodes.
 2. `/nodes/register` to accept a list of new nodes in the form of URLs.
 3. `/nodes/resolve`   to implement our Consensus Algorithm, which resolves any conflicts—to ensure a node has the correct chain.
 
@@ -989,8 +993,8 @@ class Blockchain:
             self.nodes.add(parsed_url.path)
         else:
             raise ValueError('Invalid URL')
-  
-  
+
+
 ```
 
 `netloc` and `path` are used to detect different types of urls it handles.
@@ -1037,13 +1041,13 @@ class Blockchain:
         :param chain: A blockchain
         :return: True if valid, False if not
         """
-        
+
         last_block = chain[0]
         current_index = 1
 
         while current_index < len(chain):
             block = chain[current_index]
-            
+
             # Check that the hash of the block is correct
             if block['previous_hash'] != self.hash(last_block):
                 return False
@@ -1058,7 +1062,7 @@ class Blockchain:
         return True
 ```
 
-`resolve_conflicts` is to replace larger valid chain to current chain on the node. 
+`resolve_conflicts` is to replace larger valid chain to current chain on the node.
 
 `resolve_conflicts()` is a method which loops through all our neighbouring nodes, *downloads* their chains and verifies them using the above method. **If a valid chain is found, whose length is greater than ours, we replace ours.**
 
@@ -1075,7 +1079,7 @@ class Blockchain:
 
         neighbours = self.nodes
         #print (str(self.nodes))
-        
+
         new_chain = None
 
         # We're only looking for chains longer than ours
@@ -1171,7 +1175,7 @@ if __name__ == '__main__':
 Now it supports `--port <port>` options, below two terminal output is showing how two nodes were started with different ports.
 
 ```shell
-(env) python node.py 
+(env) python node.py
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!

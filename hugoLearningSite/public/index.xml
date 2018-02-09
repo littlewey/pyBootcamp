@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python Bootcamp</title>
+    <link>http://pyCamp.swdp.me/</link>
+    <description>Recent content on Python Bootcamp</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Feb 2018 18:33:51 +0800</lastBuildDate>
+    
+	<atom:link href="http://pyCamp.swdp.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Build a web Tool</title>
+      <link>http://pyCamp.swdp.me/tasks/task-1/</link>
+      <pubDate>Fri, 09 Feb 2018 19:11:59 +0800</pubDate>
+      
+      <guid>http://pyCamp.swdp.me/tasks/task-1/</guid>
+      <description>This task is to create a web app with flask, following the flask-mega-tutorial first three chapters.
+reference:
+ innoSearch project: https://github.com/littlewey/yet-another-GSC-C-lighthouse ldif-compare: https://github.com/littlewey/ldif-compare  After class task:
+ create a web tool, which could reuse the main function of Task 0.  </description>
+    </item>
+    
+    <item>
+      <title>Build a blockchain</title>
+      <link>http://pyCamp.swdp.me/tasks/task-2/</link>
+      <pubDate>Fri, 09 Feb 2018 19:11:59 +0800</pubDate>
+      
+      <guid>http://pyCamp.swdp.me/tasks/task-2/</guid>
+      <description>Our task demo is highly reusing code and even some words in https://hackernoon.com/learn-blockchains-by-building-one-117428612f46 (many thanks to Daniel van Flymen), some enhancements were added on top of that here including sender address verification, and some script clients.
+ In this task, we will create a simple part of blockchain application like bitcoin.
+Things we will go though:
+ Some object-oriented coding (not just call class from a python module) http request flask as http api endpoints  [TOC]</description>
+    </item>
+    
+    <item>
+      <title>Build a cli Tool</title>
+      <link>http://pyCamp.swdp.me/tasks/task-0/</link>
+      <pubDate>Fri, 09 Feb 2018 19:11:59 +0800</pubDate>
+      
+      <guid>http://pyCamp.swdp.me/tasks/task-0/</guid>
+      <description>Let&amp;rsquo;s create tool to parse a nova/nova.conf file in order to get expected values, like my_ip , if what virt_type etc..
+What needs to be done?
+ A function to handle the actual input. make it handle arguments from command line Let&amp;rsquo;s make it professional Use docopt to simplify it!  reference: http://docopt.org
+ deal with excel/csv etc&amp;hellip;
+ [TOC]
+After class task:
+ create a cli tool  Input processing reference: https://docs.</description>
+    </item>
+    
+  </channel>
+</rss>

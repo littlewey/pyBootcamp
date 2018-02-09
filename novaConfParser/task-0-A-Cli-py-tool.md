@@ -1,4 +1,9 @@
-# Task 0, create a cli tool
+---
+title: "Keynote: Build a cli Tool"
+date: 2018-02-09T19:11:59+08:00
+weight: 2
+---
+
 
 Let's create tool to parse a `nova/nova.conf` file in order to get expected values, like `my_ip` , if  what `virt_type`  etc..
 
@@ -130,7 +135,7 @@ Load it as a string:
 ```python
 In [1]: input = """
    ...: [DEFAULT]
-   ...: 
+   ...:
    ...: # NETWORK
    ...: network_manager=nova.network.manager.FlatDHCPManager
    ...: force_dhcp_release=True
@@ -187,7 +192,7 @@ We could build a function to parse specific parameter name and return the value 
 
 ```python
 def parse(par,inputList):
-  #magic things 
+  #magic things
   return valueForThePar
 ```
 
@@ -213,7 +218,7 @@ In [12]: def parse(par,inputList):
     ...:     if par == line[0]:
     ...:       valueForThePar = line[1]
     ...:   return valueForThePar
-    ...: 
+    ...:
 
 In [13]: parse("neutron",inputList)
 Out[13]: '#Err: there is no neutron found.'
@@ -222,7 +227,7 @@ In [14]: parse("virt_type",inputList)
 Out[14]: 'qemu'
 ```
 
-Seems working yet easy, correct? 
+Seems working yet easy, correct?
 
 - But we need a real program to handle a file as input instead of a string coming from copy paste, how could we do that?
 - How could we let the program know which parameter need to be parsed?
@@ -310,8 +315,8 @@ Examples:
 
 # parse parseArgVars
 def parseArgVars(argVars, flag):
-  # init for filePath, par 
-  filePath, par = "", "" 
+  # init for filePath, par
+  filePath, par = "", ""
   if len(argVars) == 4:
     if "--input" and "--par" in [argVars[0], argVars[2]]:
       # if in order: --input x --par y
@@ -342,9 +347,9 @@ def main(argVars, argFormatErrorFlag):
         print (helpInfo)
         # End function without raise errors
         return None
-    
+
     # ... something in between <---------
-    
+
     print (parse(par,inputList))
 
 # run main function
@@ -488,7 +493,7 @@ Let's verify it:
 It's doing thins magically good, we could see in this single example, `arguments` is a `dict`, which is actually covering the argument parse and validation.
 
 ```bash
-$ python3 novaConfParser_V2.py 
+$ python3 novaConfParser_V2.py
 {'--input': False,
  '--par': False,
  '<par>': None,
@@ -509,7 +514,7 @@ Options:
 
 Examples:
   python3 novaConfParser_V2.py --input /nova/nova.conf --par my_ip
-  
+
 $ python3 novaConfParser_V2.py --version
 0.1.1rc
 ```
@@ -541,7 +546,6 @@ Out[10]: '/nova/nova.conf'
 - `virtualenv`
 - parse from or write to json, excel, xml, csv etc ?
   - built-in library: https://docs.python.org/3/library/index.html
-  - Awesome Python: https://github.com/vinta/awesome-python 
-- Doing things for servers? paramiko / ansible 
-- exceptions: http://www.runoob.com/python/python-exceptions.html 
-
+  - Awesome Python: https://github.com/vinta/awesome-python
+- Doing things for servers? paramiko / ansible
+- exceptions: http://www.runoob.com/python/python-exceptions.html

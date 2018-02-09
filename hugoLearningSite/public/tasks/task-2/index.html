@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.36" />
+    <meta name="description" content="">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Build a blockchain :: Python Bootcamp</title>
+    
+    
+    <link href="/css/nucleus.css?1518176918" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1518176918" rel="stylesheet">
+    <link href="/css/hybrid.css?1518176918" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1518176918" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1518176918" rel="stylesheet">
+    <link href="/css/auto-complete.css?1518176918" rel="stylesheet">
+    <link href="/css/theme.css?1518176918" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1518176918" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1518176918"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/tasks/task-2/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://pyCamp.swdp.me">
+	<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1518173897900" class="icon" style="" viewBox="0 0 1029 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="557" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.234375" height="48"><defs><style type="text/css"></style></defs><path d="M610.56 7.68l38.4 8.533333 31.146667 11.093334 25.173333 12.8 19.2 13.653333 14.506667 14.506667 10.666666 14.506666 6.826667 14.08 4.266667 12.8 1.706666 11.093334 0.853334 8.533333-0.426667 5.546667V362.666667l-2.133333 26.88-5.546667 23.466666-8.96 19.626667-11.093333 16.213333-12.8 13.226667-14.08 10.666667-14.933334 8.106666-14.933333 5.973334-14.08 4.266666-12.8 2.986667-11.093333 1.706667-8.96 0.853333H376.746667l-29.44 2.133333-25.173334 5.973334-21.333333 9.386666-17.493333 11.52-14.08 13.653334-11.52 14.933333-8.533334 15.36-6.4 15.786667-4.266666 14.933333-2.986667 13.653333-1.706667 11.52-0.853333 8.96v130.56H137.813333l-8.96-1.28-11.946666-2.986666-13.653334-5.12-14.933333-7.68-15.36-11.093334-15.36-15.36-14.933333-19.626666-13.653334-25.173334-11.946666-31.146666-8.96-37.546667-5.973334-44.8L0 510.72l2.56-52.053333 6.826667-44.373334 10.24-37.12 13.653333-30.293333 15.36-24.32 17.066667-18.773333 17.92-14.08 17.92-10.24 17.066666-6.826667 15.36-4.266667 13.653334-2.133333 10.24-0.426667h6.826666l2.56 0.426667h348.16v-35.413333H266.24l-0.426667-117.333334-0.853333-15.786666 2.133333-14.506667 4.693334-13.226667 7.253333-11.946666 10.666667-11.093334 13.226666-9.813333 16.213334-8.533333 18.773333-7.68 21.76-6.4 24.746667-5.12 27.306666-4.266667 30.293334-2.56 32.853333-1.706667 35.84-0.853333 54.186667 2.133333 45.653333 5.546667z m-268.8 84.48l-9.813333 14.08-3.413334 17.493333 3.413334 17.493334 9.813333 14.506666 14.08 9.386667 17.493333 3.84 17.493334-3.84 14.08-9.386667 9.813333-14.506666 3.413333-17.493334-3.413333-17.493333-9.813333-14.08-14.08-9.386667-17.493334-3.84-17.493333 3.84-14.08 9.386667z" fill="#ffffff" p-id="558"></path><path d="M900.266667 260.693333l11.946666 2.56 13.653334 5.12 14.933333 7.68 15.36 11.52 15.36 14.933334 14.933333 20.053333 13.653334 25.173333 11.946666 31.146667 8.96 37.546667 5.973334 44.373333 2.133333 52.48-2.56 52.48-6.826667 44.373333-10.24 36.693334-13.653333 30.293333-15.36 24.32-17.066667 19.2-17.92 14.08-17.92 10.24-17.066666 6.826667-15.36 3.84-13.653334 2.133333-10.24 0.853333-6.826666-0.426666h-350.72v34.986666h249.173333l0.426667 117.76 0.853333 15.36-2.133333 14.506667-4.693334 13.226667-7.253333 12.373333-10.666667 10.666667-13.226666 10.24-16.213334 8.533333-18.773333 7.253333-21.76 6.4-24.746667 5.546667-27.306666 3.84-30.293334 2.986667-32.853333 1.706666-35.84 0.426667-54.186667-1.706667-45.653333-5.973333-38.4-8.533333-31.146667-10.666667-25.173333-12.8-19.2-14.08-14.506667-14.506667-10.666666-14.506666-6.826667-14.08-4.266667-12.8-1.706666-10.666667-0.853334-8.533333 0.426667-5.546667v-227.84l2.133333-27.306667 5.546667-23.04 8.96-19.626666 11.093333-16.213334 12.8-13.653333 14.08-10.24 14.933334-8.533333 14.933333-5.973334 14.08-4.266666 12.8-2.56 11.093333-1.706667 8.96-0.853333 5.546667-0.426667h249.173333l29.44-2.133333 25.173334-5.973334 21.333333-8.96 17.493333-11.946666 14.08-13.653334 11.52-14.933333 8.533334-15.36 6.4-15.36 4.266666-14.933333 2.986667-13.653334 1.706667-11.946666 0.853333-8.96V258.986667h89.173333l5.973334 0.426666 8.96 1.28z m-276.053334 608l-9.813333 14.08-3.413333 17.493334 3.413333 17.493333 9.813333 14.08 14.08 9.813333 17.493334 3.413334 17.493333-3.413334 14.08-9.813333 9.813333-14.08 3.413334-17.493333-3.413334-17.493334-9.813333-14.08-14.08-9.813333-17.493333-3.413333-17.493334 3.413333-14.08 9.813333z" fill="#ffffff" p-id="559"></path></svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1518176918"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1518176918"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/';
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1518176918"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/tasks/" title="Tasks" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/tasks/">
+          Tasks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tasks/task-1/" title="Build a web Tool" class="dd-item ">
+        <a href="/tasks/task-1/">
+        Build a web Tool
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tasks/task-2/" title="Build a blockchain" class="dd-item active">
+        <a href="/tasks/task-2/">
+        Build a blockchain
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tasks/task-0/" title="Build a cli Tool" class="dd-item ">
+        <a href="/tasks/task-0/">
+        Build a cli Tool
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/tasks/'>Tasks</a> > Build a blockchain
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-what-is-a-blockchain-looks-like">1. What is a blockchain looks like</a>
+<ul>
+<li><a href="#1-1-concepts">1.1 Concepts</a></li>
+</ul></li>
+<li><a href="#2-blueprint-of-the-code">2. Blueprint of the code</a>
+<ul>
+<li><a href="#2-1-blockchain-py">2.1 <code>blockchain.py</code></a></li>
+<li><a href="#2-2-wallet-py">2.2 <code>wallet.py</code></a></li>
+<li><a href="#2-3-node-py">2.3 <code>node.py</code></a>
+<ul>
+<li><a href="#2-3-1-endpoints">2.3.1 Endpoints</a></li>
+</ul></li>
+<li><a href="#2-4-sigscript-py">2.4 <code>sigScript.py</code></a></li>
+</ul></li>
+<li><a href="#3-start-with-blockchain-py">3. Start with <code>blockchain.py</code></a>
+<ul>
+<li><a href="#3-1-glance-of-block">3.1 glance of <code>Block</code></a></li>
+<li><a href="#3-2-transaction">3.2 Transaction</a></li>
+<li><a href="#3-3-build-block">3.3 Build block</a></li>
+<li><a href="#3-4-proof-of-work-nonce">3.4 Proof of Work (nonce)</a></li>
+</ul></li>
+<li><a href="#4-node-py-the-mining-node">4. <code>node.py</code> , the mining node</a>
+<ul>
+<li><a href="#4-1-chain-and-transactions-api">4.1 <code>/chain</code> and<code>/transactions</code> API</a></li>
+<li><a href="#4-2-transactions-new-api">4.2 <code>/transactions/new</code> API</a></li>
+<li><a href="#4-3-mine-the-mining-api">4.3 <code>/mine</code> the mining API</a></li>
+</ul></li>
+<li><a href="#5-wallet-py-address-and-secret">5. <code>wallet.py</code> address and secret</a>
+<ul>
+<li><a href="#5-1-init-for-the-key-pair">5.1 Init for the key pair</a></li>
+<li><a href="#5-2-sign-a-transaction">5.2 Sign a transaction</a></li>
+<li><a href="#5-3-verify-a-transaction">5.3 Verify a transaction</a></li>
+</ul></li>
+<li><a href="#6-sigscript-py-sign-a-transaction">6. <code>sigScript.py</code> , sign a transaction</a></li>
+<li><a href="#7-manully-test-current-work">7. Manully test current work</a>
+<ul>
+<li><a href="#7-1-some-preparation-works">7.1 some preparation works</a></li>
+<li><a href="#7-2-some-clients">7.2 some clients</a>
+<ul>
+<li><a href="#7-2-1-how-to-use">7.2.1 How to use:</a></li>
+<li><a href="#7-2-2-install-dependencies">7.2.2 Install dependencies</a></li>
+</ul></li>
+<li><a href="#7-3-run-node-py-and-test">7.3  Run <code>node.py</code>, and test!</a>
+<ul>
+<li><a href="#7-3-1-supported-commands-till-now">7.3.1 Supported commands till now</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#8-consensus">8. Consensus</a>
+<ul>
+<li><a href="#8-1-registering-new-nodes">8.1 Registering new Nodes</a></li>
+<li><a href="#8-2-consensus-algorithm">8.2 Consensus Algorithm</a></li>
+<li><a href="#8-3-endpoints-of-nodes">8.3 endpoints of <code>/nodes/*</code></a></li>
+</ul></li>
+<li><a href="#9-run-multiple-nodes">9 Run multiple nodes!</a></li>
+<li><a href="#10-try-final-version-till-now">10 Try final version till now</a>
+<ul>
+<li><a href="#play-with-block-chain-images-play-with-block-chain-png"><img src="./images/play_with_block_chain.png" alt="play_with_block_chain" /></a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Build a blockchain</h1>
+          
+
+        
+
+
+
+
+<blockquote>
+<p>Our task demo is highly reusing code and even some words in <a href="https://hackernoon.com/learn-blockchains-by-building-one-117428612f46">https://hackernoon.com/learn-blockchains-by-building-one-117428612f46</a> (many thanks to <a href="https://hackernoon.com/@vanflymen?source=post_header_lockup">Daniel van Flymen</a>), some enhancements were added on top of that here including sender address verification, and some script clients.</p>
+</blockquote>
+
+<p>In this task, we will create a simple part of blockchain application like <code>bitcoin</code>.</p>
+
+<p>Things we will go though:</p>
+
+<ul>
+<li>Some object-oriented coding (not just call class from a python module)</li>
+<li>http request</li>
+<li>flask as http api endpoints</li>
+</ul>
+
+<p>[TOC]</p>
+
+<h2 id="1-what-is-a-blockchain-looks-like">1. What is a blockchain looks like</h2>
+
+<blockquote>
+<p>ref: <a href="https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses">https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses</a></p>
+
+<p>ref: <a href="https://en.bitcoin.it/wiki/Protocol_rules">https://en.bitcoin.it/wiki/Protocol_rules</a></p>
+
+<p>ref: <a href="https://www.zhihu.com/question/20941124">https://www.zhihu.com/question/20941124</a></p>
+
+<p>ref: <a href="https://www.youtube.com/watch?v=Lx9zgZCMqXE">https://www.youtube.com/watch?v=Lx9zgZCMqXE</a></p>
+</blockquote>
+
+<p>The thing here we will build is a tiny version of the very first blockchain: <code>bitcoin</code>. We could see what a <code>bitcoin</code> block looks like here: <a href="https://blockchain.info">https://blockchain.info</a> .</p>
+
+<h3 id="1-1-concepts">1.1 Concepts</h3>
+
+<ul>
+<li><p>Block</p>
+
+<ul>
+<li>Things inside:</li>
+<li>index</li>
+<li>hash of last block</li>
+<li>timestamp</li>
+<li>transactions</li>
+<li>nonce</li>
+<li>Things could be done:
+
+<ul>
+<li>hash ( to solve puzzle and output the nonce and hash value)</li>
+<li>validation ( check if the chain/block is valid )</li>
+<li>create new block to the chain</li>
+<li>add new transaction to transaction pool</li>
+</ul></li>
+</ul></li>
+
+<li><p>Wallet</p>
+
+<ul>
+<li>address ( a public key, for transaction verification and showing identity/ ownership )</li>
+<li>secret ( a private key for signing transactions, with it you could spend/withdraw your wallet)</li>
+<li>Things need to be done:</li>
+<li>sign</li>
+<li>verify</li>
+</ul></li>
+
+<li><p>node</p>
+
+<ul>
+<li>broadcast and recieve other nodes broadcast to:</li>
+<li>get longest valid blockchain</li>
+<li>recieve transaction, verify ownership</li>
+<li>send transaction</li>
+<li>send mining outcome</li>
+<li>transaction</li>
+<li>mining</li>
+<li>guess proof of work(nonce) the solve puzzle with last block on the chain and valid transactions in pool</li>
+</ul></li>
+</ul>
+
+<h2 id="2-blueprint-of-the-code">2. Blueprint of the code</h2>
+
+<pre><code class="language-bash">$ tree -L 1
+.
+├── blockchain.py
+├── node.py
+├── sigScript.py
+└── wallet.py
+</code></pre>
+
+<h3 id="2-1-blockchain-py">2.1 <code>blockchain.py</code></h3>
+
+<p>For blockchain, we need to implement a class with below things, and it will be called by node or so:</p>
+
+<pre><code class="language-python">class Blockchain:
+    def __init__(self):
+        self.chain = []
+        self.transactionsPool = []
+
+    def new_block(self):
+        # build a new Block and adds it to the chain
+        pass
+
+    def new_transaction_by_mining(self):
+        # Adds a new transaction to the list of transactions
+        pass
+
+    @staticmethod
+    def hash(block):
+        # Hashes a Block
+        pass
+
+    @property
+    def last_block(self):
+        # Returns the last Block in the chain
+        pass
+</code></pre>
+
+<p>note, <code>@staticmethod</code> is function that need to be reused internal and external the class, which are not related to instance( the <code>self</code>), also calling it won&rsquo;t trigger <code>__init__</code>.</p>
+
+<p>example:</p>
+
+<pre><code class="language-python">In [104]: class MyClass:
+     ...:    def __init__(self):
+     ...:       print(&quot;Initialize instance - not used&quot;)
+     ...:
+     ...:    @staticmethod
+     ...:    def my_static(toprint):
+     ...:        print(toprint)
+     ...:
+
+In [105]: MyClass.my_static(&quot;Print this&quot;)
+Print this
+</code></pre>
+
+<p>note, <code>@property</code> is to make the method to be a getter, it means <code>blockchainInstance.last_block</code> could be called.</p>
+
+<h3 id="2-2-wallet-py">2.2 <code>wallet.py</code></h3>
+
+<p>For wallet, we need to implement class with below things, and it will be called by node and signatureScript:</p>
+
+<pre><code class="language-python">class Wallet:
+    def __init__(self):
+        # generated a new key pair
+        self.publicKey = &quot;&quot;
+        self.privateKey = &quot;&quot;
+
+    @property
+    def address(self):
+        return self.publicKey
+
+    @property
+    def secret(self):
+        return self.privateKey
+
+    def signature(self, hashedTransaction):
+        # sign the hashedTransaction with privateKey, return the signature
+        pass
+
+    @staticmethod
+    def verification(transaction, publickey, signature):
+        # verify a given transaction with publickey(sender's address) and signature to verify ownership
+        pass
+</code></pre>
+
+<h3 id="2-3-node-py">2.3 <code>node.py</code></h3>
+
+<p>For node, it&rsquo;s the running machine calling and being called :</p>
+
+<ul>
+<li>by neighbor nodes for communications</li>
+<li>by user for querying data/status and requesting for transactions</li>
+<li>by owner for mining</li>
+</ul>
+
+<p>etc.</p>
+
+<p>We used a simpfied and already known solution: http API server, provided by flask.</p>
+
+<h4 id="2-3-1-endpoints">2.3.1 Endpoints</h4>
+
+<p>Endpoints to be implemented.</p>
+
+<blockquote>
+<p>Implemente them in step one</p>
+</blockquote>
+
+<ul>
+<li><code>/mine</code></li>
+<li><code>/transactions</code></li>
+<li><code>/transactions/new</code></li>
+<li><code>/chain</code></li>
+</ul>
+
+<blockquote>
+<p>Implemeted later</p>
+</blockquote>
+
+<ul>
+<li><code>/nodes</code></li>
+<li><code>/nodes/register</code></li>
+<li><code>/nodes/resolve</code></li>
+</ul>
+
+<pre><code class="language-python">from blockchain import Blockchain
+from wallet import Wallet
+from flask import Flask, jsonify, request
+
+# Instantiate the Node
+app = Flask(__name__)
+
+# Instantiate the Wallet
+wallet = Wallet()
+
+# Instantiate the Blockchain
+blockchain = Blockchain()
+
+# endpoints
+
+@app.route('/mine', methods=['GET'])
+def mine():
+    return &quot;We'll mine a new Block&quot;
+
+@app.route('/transactions/new', methods=['POST'])
+def new_transaction():
+    return &quot;We'll add a new transaction&quot;
+
+@app.route('/chain', methods=['GET'])
+def full_chain():
+    response = {
+        'chain': blockchain.chain,
+        'length': len(blockchain.chain),
+    }
+    return jsonify(response), 200
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+</code></pre>
+
+<h3 id="2-4-sigscript-py">2.4 <code>sigScript.py</code></h3>
+
+<p>This is a cli tool to sign a transaction, we are going to call it by some bash client for user to request transactions. We could talk about it later together with <code>wallet.py</code> .</p>
+
+<pre><code class="language-python">&quot;&quot;&quot;
+Usage:
+    singnagureScript.py transaction privateKey
+
+Options:
+    --help    Show this help screen
+
+&quot;&quot;&quot;
+import sys
+from Crypto.Hash import MD5
+from wallet import Wallet
+
+transaction, privateKey = [ argument.encode() for argument in argv[1:] ]
+hashedTransaction = MD5.new(transaction)
+
+wallet = Wallet(privateKeyB64 = privateKeyB64)
+signature = wallet.signature(hashedTransaction)
+
+print (signature)
+</code></pre>
+
+<h2 id="3-start-with-blockchain-py">3. Start with <code>blockchain.py</code></h2>
+
+<h3 id="3-1-glance-of-block">3.1 glance of <code>Block</code></h3>
+
+<p>Each Block has an <em>index</em>, a <em>timestamp</em> (in Unix time), a <em>list of transactions</em>, a <em>proof</em> (more on that later), and the <em>hash of the previous Block</em>.</p>
+
+<p>Here’s an example of what a single Block looks like:</p>
+
+<p>The <code>previous_hash</code> is the hash value of the block with index: <code>index - 1</code> , and that&rsquo;s how the chain connected and <strong>that’s what gives blockchains immutability:</strong> If an attacker corrupted an earlier Block in the chain then <strong>all</strong> subsequent blocks will contain incorrect hashes.</p>
+
+<pre><code class="language-python">block = {
+    'index': 1,
+    'timestamp': 1506057125.900785,
+    'transactions': [
+        {
+            'sender': &quot;8527147fe1f5426f9dd545de4b27ee00&quot;,
+            'recipient': &quot;a77f5cdfa2934df3954a5c7c7da5df1f&quot;,
+            'amount': 5,
+        }
+    ],
+    'proof': 324984774000,
+    'previous_hash': &quot;2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824&quot;
+}
+</code></pre>
+
+<h3 id="3-2-transaction">3.2 Transaction</h3>
+
+<p><code>self.transactionsPool</code> is a list of transactions to be added in next mined block. And it looks like this:</p>
+
+<pre><code class="language-python">{
+ &quot;sender&quot;: &quot;my address&quot;,
+ &quot;recipient&quot;: &quot;someone else's address&quot;,
+ &quot;amount&quot;: 5
+}
+</code></pre>
+
+<p>Then method <code>new_transaction(self, sender, recipient, amount)</code> could be like this:</p>
+
+<p>It actually appends a the transaction as a new <code>dict</code> to the list <code>transactionsPool</code>.</p>
+
+<p>This method should be called on two conditions:</p>
+
+<ul>
+<li>mining</li>
+<li>wallet owner (user) triggerred transaction</li>
+</ul>
+
+<p>We&rsquo;ll implement that later on corresponding endpoints in <code>node.py</code></p>
+
+<pre><code class="language-python">class Blockchain:
+    #...
+
+    def new_transaction(self, sender, recipient, amount):
+        &quot;&quot;&quot;
+        Creates a new transaction to go into the next mined Block
+        :param sender: &lt;str&gt; Address of the Sender
+        :param recipient: &lt;str&gt; Address of the Recipient
+        :param amount: &lt;int&gt; Amount
+        :return: &lt;int&gt; The index of the Block that will hold this transaction
+        &quot;&quot;&quot;
+
+        self.transactionsPool.append({
+            'sender': sender,
+            'recipient': recipient,
+            'amount': amount,
+        })
+
+</code></pre>
+
+<h3 id="3-3-build-block">3.3 Build block</h3>
+
+<p>When our <code>Blockchain</code> is instantiated we’ll need to seed it with a <em>genesis</em> block—a block with no predecessors. We’ll also need to add a <em>proof</em> to our genesis block which is the result of mining (or proof of work). We’ll talk more about mining later.</p>
+
+<p>In addition to creating the <em>genesis</em> block in our constructor, we’ll also flesh out the methods for <code>new_block()</code>, <code>new_transaction()</code> and <code>hash()</code>:</p>
+
+<pre><code class="language-python">import hashlib
+import json
+from time import time
+from urllib.parse import urlparse
+
+class Blockchain:
+    def __init__(self):
+        self.chain = []
+        self.transactionsPool = []
+
+        # Create the genesis block
+        self.new_block(previous_hash=1, proof=1)
+    def new_block(self, proof, previous_hash):
+        &quot;&quot;&quot;
+        Create a new Block in the Blockchain
+
+        :param proof: The proof given by the Proof of Work algorithm
+        :param previous_hash: Hash of previous Block
+        :return: New Block
+        &quot;&quot;&quot;
+
+        block = {
+            'index': len(self.chain) + 1,
+            'timestamp': time(),
+            'transactions': self.transactionsPool,
+            'proof': proof,
+            'previous_hash': previous_hash or self.hash(self.chain[-1]),
+        }
+
+        # Reset the pool transactions
+        self.transactionsPool = []
+
+        self.chain.append(block)
+        return block
+
+    def new_transaction(self, sender, recipient, amount):
+        &quot;&quot;&quot;
+        Creates a new transaction to go into the next mined Block
+
+        :param sender: Address of the Sender
+        :param recipient: Address of the Recipient
+        :param amount: Amount
+        :return: The index of the Block that will hold this transaction
+        &quot;&quot;&quot;
+        self.transactionsPool.append({
+            'sender': sender,
+            'recipient': recipient,
+            'amount': amount,
+        })
+
+
+    @staticmethod
+    def hash(block):
+        &quot;&quot;&quot;
+        Creates a SHA-256 hash of a Block
+
+        :param block: Block
+        &quot;&quot;&quot;
+
+        # We must make sure that the Dictionary is Ordered, or we'll have inconsistent hashes
+        block_string = json.dumps(block, sort_keys=True).encode()
+        return hashlib.sha256(block_string).hexdigest()
+
+    @property
+    def last_block(self):
+        # Returns the last Block in the chain
+        pass
+</code></pre>
+
+<p>We’re almost done with representing our blockchain. But at this point, you must be wondering how new blocks are created or mined.</p>
+
+<h3 id="3-4-proof-of-work-nonce">3.4 Proof of Work (nonce)</h3>
+
+<p>A Proof of Work algorithm (PoW) is how new Blocks are created or mined on the blockchain. The goal of PoW is to discover a number which solves a problem. The number must be <strong>difficult to find</strong> <strong>but easy to verify</strong>—computationally speaking—by anyone on the network. This is the core idea behind Proof of Work.</p>
+
+<p>We’ll look at a very simple example to help this sink in.</p>
+
+<p>Let’s decide that the <em>hash</em> of some integer <code>x</code> multiplied by another <code>y</code> must end in <code>0</code>. So, <code>hash(x * y) = ac23dc...0</code>. And for this simplified example, let’s fix <code>x = 5</code>. Implementing this in Python:</p>
+
+<pre><code class="language-python">from hashlib import sha256
+x = 5
+y = 0  # We don't know what y should be yet...
+while sha256(str(x*y).encode()).hexdigest()[-1] != &quot;0&quot;:
+    y += 1
+print(&quot;The solution is y = %d &quot; % y)
+</code></pre>
+
+<p>The solution here is <code>y = 21</code>. Since, the produced hash ends in <code>0</code>:</p>
+
+<pre><code class="language-python">In [1]: sha256(str(5 * 21).encode()).hexdigest()
+Out[1]: '1253e9373e781b7500266caa55150e08e210bc8cd8cc70d89985e3600155e860'
+</code></pre>
+
+<p>In Bitcoin, the Proof of Work algorithm is called <a href="https://en.wikipedia.org/wiki/Hashcash"><em>Hashcash</em></a>. And it’s not too different from our basic example above. It’s the algorithm that miners race to solve in order to create a new block. In general, the <strong>difficulty</strong> is determined by the number of characters searched for in a string. The miners are then rewarded for their solution by receiving a coin—in a transaction.</p>
+
+<p>The network is able to <em>easily</em> verify their solution.</p>
+
+<p>Let&rsquo;s make a diffculty configuration interface, create a file called <code>config.py</code></p>
+
+<pre><code class="language-python">difficulty = 4
+</code></pre>
+
+<p>Invoke it by <code>import</code></p>
+
+<pre><code class="language-python">from config import difficulty
+</code></pre>
+
+<p>Let&rsquo;s implementing the Proof of Work code:</p>
+
+<pre><code class="language-python">import hashlib
+import json
+from time import time
+from urllib.parse import urlparse
+from config import difficulty
+
+    #...
+    def proof_of_work(self, last_block):
+        &quot;&quot;&quot;
+        Simple Proof of Work Algorithm:
+
+         - Find a number p' such that hash(pp') contains leading &lt;number of difficulty&gt; zeroes
+         - Where p is the previous proof, and p' is the new proof
+
+        :param last_block: &lt;dict&gt; last Block
+        :return: &lt;int&gt;
+        &quot;&quot;&quot;
+
+        last_proof = last_block['proof']
+        last_hash = self.hash(last_block)
+
+        proof = 0
+        while self.valid_proof(last_proof, proof, last_hash) is False:
+            proof += 1
+
+        return proof
+
+    @property
+    def last_block(self):
+        return self.chain[-1]
+
+    @staticmethod
+    def valid_proof(last_proof, proof, last_hash):
+        &quot;&quot;&quot;
+        Validates the Proof
+
+        :param last_proof: &lt;int&gt; Previous Proof
+        :param proof: &lt;int&gt; Current Proof
+        :param last_hash: &lt;str&gt; The hash of the Previous Block
+        :return: &lt;bool&gt; True if correct, False if not.
+
+        &quot;&quot;&quot;
+
+        guess = &quot;&quot;.join([str(last_proof),str(proof),last_hash]).encode()
+        guess_hash = hashlib.sha256(guess).hexdigest()
+        return guess_hash[:difficulty] == &quot;0&quot; * difficulty
+    # ...
+</code></pre>
+
+<p>To adjust the difficulty of the algorithm, we could modify it in <code>config.py</code>. But 4 is sufficient. You’ll find out that the addition of a single leading zero makes a <em>huge</em> difference to the time required to find a solution.</p>
+
+<p>Our <code>blockchain</code> class is almost complete and we’re ready to begin interacting with it using HTTP requests.</p>
+
+<h2 id="4-node-py-the-mining-node">4. <code>node.py</code> , the mining node</h2>
+
+<p>It&rsquo;s designed like this:</p>
+
+<ul>
+<li><code>/mine</code>                          minning a block</li>
+<li><code>/transactions</code>           get transaction pool</li>
+<li><code>/transactions/new</code>    issue a transaction</li>
+<li><code>/chain</code>                        get whole chain</li>
+<li><code>/nodes</code>                        get surrounding nodes</li>
+<li><code>/nodes/register</code>       register a neighbor node</li>
+<li><code>/nodes/resolve</code>         resolve blockchain conflic among nodes</li>
+</ul>
+
+<h3 id="4-1-chain-and-transactions-api">4.1 <code>/chain</code> and<code>/transactions</code> API</h3>
+
+<p>For <code>/chain</code>, we already have it even during the blueprint drawing.</p>
+
+<p>As http server, it builds the <code>dict</code> format response than converts it to json, finally returns it to http client with <code>200 OK</code>. The <code>'chain'</code> value comes form the blockchain instance.</p>
+
+<blockquote>
+<p>ref: <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>
+</blockquote>
+
+<pre><code class="language-python">#...
+
+# Instantiate the Blockchain
+blockchain = Blockchain()
+
+#...
+
+@app.route('/chain', methods=['GET'])
+def full_chain():
+    response = {
+        'chain': blockchain.chain,
+        'length': len(blockchain.chain),
+    }
+    return jsonify(response), 200
+</code></pre>
+
+<p>Similarly <code>/transactions</code> could be like this:</p>
+
+<pre><code class="language-python">@app.route('/transactions', methods=['GET'])
+def all_transactions():
+    response = {
+        'transactions': blockchain.transactionsPool,
+        'length': len(blockchain.transactionsPool),
+    }
+    return jsonify(response), 200
+</code></pre>
+
+<h3 id="4-2-transactions-new-api">4.2 <code>/transactions/new</code> API</h3>
+
+<p>In bitcoin, miner should verify transactions in at least two parts:</p>
+
+<ul>
+<li>The ownership of sender, by signature verification</li>
+<li>The balance of a sender&rsquo;s account, by track the chain of transactions. ( we don&rsquo;t implement this part for now and thus we cannot know if sender has enough balance in our demo codes, sorry about that&hellip; )</li>
+</ul>
+
+<p>Then it should recieve like this:</p>
+
+<pre><code class="language-python">{
+ &quot;sender&quot;: &quot;my address&quot;,
+ &quot;recipient&quot;: &quot;someone else's address&quot;,
+ &quot;amount&quot;: 5,
+ &quot;signature&quot;: &quot;signature of my address&quot;
+}
+</code></pre>
+
+<p>If input is in good format, do the verification with transaction, signature and public key(my address).</p>
+
+<p>Then, if verification passed: continue the transaction creation by calling the <code>blockchain.new_transaction()</code> with transaction without signature as below:</p>
+
+<pre><code class="language-python">{
+ &quot;sender&quot;: &quot;my address&quot;,
+ &quot;recipient&quot;: &quot;someone else's address&quot;,
+ &quot;amount&quot;: 5
+}
+</code></pre>
+
+<p>New transaction will then be added to the transaction pool.</p>
+
+<p>Else, if verification failed ( signature is invalid ), <code>http 401 (Unauthorized)</code> will be returned.</p>
+
+<p>In our implementation, we could have code like this:</p>
+
+<pre><code class="language-python"># ...
+from flask import Flask, jsonify, request
+# ...
+@app.route('/transactions/new', methods=['POST'])
+def new_transaction():
+    values = request.get_json()
+
+    # Check that the required fields are in the POST'ed data
+    required = ['sender', 'recipient', 'amount', 'signature']
+    if not all(k in values for k in required):
+        return 'Missing values', 400
+
+    sender    = values['sender']
+    recipient = values['recipient']
+    amount    = values['amount']
+    signature = values['signature']
+
+
+    if not wallet.verification(sender, recipient, amount, signature):
+        return 'Signature verification failure', 401
+
+    # Create a new Transaction
+    blockchain.new_transaction(sender, recipient, amount,)
+    newBlockIndex = blockchain.last_block['index'] + 1
+    response = {'message': 'Transaction will be added to Block %d' %newBlockIndex }
+    return jsonify(response), 201
+</code></pre>
+
+<h3 id="4-3-mine-the-mining-api">4.3 <code>/mine</code> the mining API</h3>
+
+<p>Our mining endpoint is where the magic happens, and it’s easy. It has to do three things:</p>
+
+<ol>
+<li>Calculate the Proof of Work (nonce) by calling <code>blockchain.proof_of_work()</code></li>
+<li>Reward the miner (us) by adding a transaction granting us 1 coin by calling <code>blockchain.new_transaction()</code></li>
+<li>Create the new Block by adding it to the chain by calling <code>blockchain.new_block()</code></li>
+</ol>
+
+<p>Here the sender address was put <code>&quot;0&quot;</code> , as it&rsquo;s not trasnferred from anyone but being awarded.</p>
+
+<pre><code class="language-python"># ...
+from config import miningReward
+# ...
+
+@app.route('/mine', methods=['GET'])
+def mine():
+    # We run the proof of work algorithm to get the next proof...
+    last_block = blockchain.last_block
+    proof = blockchain.proof_of_work(last_block)
+
+    # We must receive a reward for finding the proof.
+    # The sender is &quot;0&quot; to signify that this node has mined a new coin.
+    blockchain.new_transaction(
+        sender = &quot;0&quot;,
+        recipient = wallet.address,
+        amount = miningReward
+    )
+
+    # Create the new Block by adding it to the chain
+    previous_hash = blockchain.hash(last_block)
+    block = blockchain.new_block(proof, previous_hash)
+
+    response = {
+        'message': &quot;New Block Created&quot;,
+        'index': block['index'],
+        'transactions': block['transactions'],
+        'proof': block['proof'],
+        'previous_hash': block['previous_hash'],
+    }
+    return jsonify(response), 200
+</code></pre>
+
+<h2 id="5-wallet-py-address-and-secret">5. <code>wallet.py</code> address and secret</h2>
+
+<p>Now let&rsquo;s finished the <code>wallet.py</code> part:</p>
+
+<p>During instatiation, a key pair need to be created:</p>
+
+<blockquote>
+<p>ref: <a href="http://pythonhosted.org/pycrypto/">http://pythonhosted.org/pycrypto/</a></p>
+</blockquote>
+
+<p>RSA was chosed here to generate the key pair, the bitcoin used a more secure one: the ECDSA. But we are doing the samilar(simplised) process here.</p>
+
+<p>The random generator space used in bitcoin is extremely large to enable wallet generation offline possible as the chance is too small, no verification on bitcoin network is needed. While, here we are just using a weak one for learning it.</p>
+
+<h3 id="5-1-init-for-the-key-pair">5.1 Init for the key pair</h3>
+
+<blockquote>
+<p>Generate secret and address, the private/ public key pair</p>
+</blockquote>
+
+<p><code>__init__</code></p>
+
+<p>A rsa instance was generated, then we encoded them with base64 for better format during communication, they were mapped to 64 charactors in both utf-8 and obvirously ASCII without newline charactor. We still used as formater in some other places later.</p>
+
+<pre><code class="language-python">from Crypto.PublicKey import RSA
+from Crypto.Signature import PKCS1_v1_5
+from Crypto import Random
+import base64
+from Crypto.Hash import MD5
+
+class Wallet:
+    def __init__(self):
+        randomGenerator = Random.new().read
+        self._rsa = RSA.generate(2048, randomGenerator)
+
+        # export private key
+        self.privateKey = self._rsa.exportKey()
+        self.privateKeyB64 = base64.b64encode(self.privateKey)
+        # export public key
+        self.publicKey = self._rsa.publickey().exportKey()
+        self.publicKeyB64 = base64.b64encode(self.publicKey)
+</code></pre>
+
+<p>While we would like to support both a newly generated case and the case with a known <code>private key</code>  and need to be imported:</p>
+
+<pre><code class="language-python">class Wallet:
+    def __init__(self,privateKeyB64 = None):
+        # If it's an instantiation with provided privateKeyB64, just import it.
+        if privateKeyB64 is not None:
+            privateKeyB64 = privateKeyB64.encode() \
+                if type(privateKeyB64) is str \
+                else privateKeyB64
+            self.privateKey, self.privateKeyB64 = base64.b64decode(privateKeyB64), privateKeyB64
+
+            # Instatiate _rsa by import private key
+            self._rsa = RSA.importKey(self.privateKey)
+
+        # If it's a new instance, generate one.
+        else:
+            randomGenerator = Random.new().read
+            self._rsa = RSA.generate(2048, randomGenerator)
+
+            # export private key
+            self.privateKey = self._rsa.exportKey()
+            self.privateKeyB64 = base64.b64encode(self.privateKey)
+
+        # export public key
+        self.publicKey = self._rsa.publickey().exportKey()
+        self.publicKeyB64 = base64.b64encode(self.publicKey)
+</code></pre>
+
+<p>The actual address(public key) and secret (private key) exposed are those encoded with base64.</p>
+
+<pre><code class="language-python">    @property
+    def address(self):
+        return self.publicKeyB64.decode()
+
+    @property
+    def secret(self):
+        return self.privateKeyB64.decode()
+</code></pre>
+
+<h3 id="5-2-sign-a-transaction">5.2 Sign a transaction</h3>
+
+<p>Then let&rsquo;s finish the part for signature:</p>
+
+<p><code>signature()</code> method relays on the generated or imported rsa instance, the signer could be instantiated with <code>PKCS1_v1_5</code> with rsa instance as the input.</p>
+
+<p>The signature method purpose was to sign the transaction with private key to prove the sender of a transaction actually own the sender address.</p>
+
+<p>And here we hashed transaction once with MD5(done before coming into this method, will show later).</p>
+
+<p>Please note in bitcoin this whole process are much complex yet basically do different times of changes like( hash, hash the hased value again, get pre-fix of that value, hash … , sign the value with private key, sign with other private key etc&hellip;)</p>
+
+<pre><code class="language-python">    def signature(self, hashedTransaction):
+        &quot;&quot;&quot;
+        Sign a hashed transaction
+
+        :param hashedTransaction: hashed transaction for one wallet address.
+        &quot;&quot;&quot;
+
+        signer = PKCS1_v1_5.new(self._rsa)
+        signatureRaw = signer.sign(hashedTransaction)
+        return base64.b64encode(signatureRaw)
+</code></pre>
+
+<h3 id="5-3-verify-a-transaction">5.3 Verify a transaction</h3>
+
+<p>Steps explained:</p>
+
+<ol>
+<li>Got the transaction from input, hash it the same way before it was signed;</li>
+<li>Then got the public key (sender address in transaction) to instantiate a verifier for verification;</li>
+<li>Got signature from input</li>
+<li>Verify the hashed transaction with verifier(from step 2 with public key) and signature.</li>
+</ol>
+
+<pre><code class="language-python">    @staticmethod
+    def verification(sender, recipient, amount, signature):
+        &quot;&quot;&quot;
+        Verify a transaction for sender's wallet ownership check.
+
+        :param sender:    &lt;str&gt; sender part of transaction to be verified
+        :param recipient: &lt;str&gt; recipient part of transaction to be verified
+        :param amount:    &lt;str&gt; amount part of transaction to be verified
+        :param signature: &lt;str&gt; signature to be verified, it was encoded in base64
+
+        &quot;&quot;&quot;
+        transaction = &quot;&quot;.join([str(part) for part in [sender, recipient, amount]]).encode()
+        hashedTransaction = MD5.new(transaction)
+
+        # Instantiate a rsa instance by importing the pub key AKA the sender address
+        _rsa = RSA.importKey(base64.b64decode(sender.encode()))
+        verifier = PKCS1_v1_5.new(_rsa)
+        return verifier.verify(
+            hashedTransaction,
+            base64.b64decode(signature.encode())
+            )
+</code></pre>
+
+<p>Now it&rsquo;s all done for our <code>wallet.py</code>.</p>
+
+<h2 id="6-sigscript-py-sign-a-transaction">6. <code>sigScript.py</code> , sign a transaction</h2>
+
+<p>Actually in Bitcoin, a sigScript was generated during a transaction, it&rsquo;s not fixed. This generated script make smart contract based on blockchain possible, and is showing high protential to change many things in industry and bussiness world.</p>
+
+<p>While here, we only simpify this sigScript to be fixed, just sign a transaction for ownershipt verification.</p>
+
+<p>As I decided to make this signatureScript a command line(CLI), the transaction format to be hased was chosed as simply joined string of each part in a transaction(instead of handling the json format).</p>
+
+<pre><code class="language-python">&quot;&quot;&quot;
+Usage:
+    sigScript.py sender recipient amount privateKeyB64
+
+Options:
+    --help    Show this help screen
+
+&quot;&quot;&quot;
+import sys
+from Crypto.Hash import MD5
+from wallet import Wallet
+
+sender, recipient, amount, privateKeyB64 = [ argument.encode() for argument in sys.argv[1:] ]
+transaction = sender + recipient + amount
+hashedTransaction = MD5.new(transaction)
+
+wallet = Wallet(privateKeyB64 = privateKeyB64)
+signature = wallet.signature(hashedTransaction)
+
+print (signature.decode())
+
+</code></pre>
+
+<p>For now, we had built a part function of a node.py, and full function of the other parts, let&rsquo;s try test it.</p>
+
+<h2 id="7-manully-test-current-work">7. Manully test current work</h2>
+
+<p>A address/secret pair is only generated during a node instance running, let&rsquo;s run it to see.</p>
+
+<h3 id="7-1-some-preparation-works">7.1 some preparation works</h3>
+
+<p>To help get the secret, let&rsquo;s add this endpoint to <code>node.py</code></p>
+
+<pre><code class="language-python">@app.route('/secret', methods=['GET'])
+def get_secret():
+    response = {
+        'message': &quot;secret sent in console...&quot;
+    }
+    secret = wallet.secret
+    print (&quot;┌─────────────────────────────────────────┐&quot;)
+    print (&quot;│        secret base64 output begins      │&quot;)
+    print (&quot;└─────────────────────────────────────────┘&quot;)
+    print (secret)
+    print (&quot;┌─────────────────────────────────────────┐&quot;)
+    print (&quot;│        secret base64 output ends        │&quot;)
+    print (&quot;└─────────────────────────────────────────┘&quot;)
+
+    return jsonify(response), 200
+</code></pre>
+
+<h3 id="7-2-some-clients">7.2 some clients</h3>
+
+<p>I created some clients to interact with our blockchain:</p>
+
+<pre><code class="language-bash">$ tree -L 1 | egrep -v &quot;.py&quot;
+.
+├── mine
+├── rc
+├── register
+├── resolve
+├── sendTransaction
+├── transactions
+├── chain
+└── secret
+</code></pre>
+
+<p>They are not magic things but bash scripts. And to make our experient easier and with more fun!</p>
+
+<h4 id="7-2-1-how-to-use">7.2.1 How to use:</h4>
+
+<p>a. run rc to initiate</p>
+
+<pre><code class="language-bash">$ . rc
+</code></pre>
+
+<p>It will ask the node.py address, just type/paste it and enter. For example</p>
+
+<pre><code class="language-bash">http://localhost:5000
+</code></pre>
+
+<p>b. run mine to mine from the session with rc initiated.</p>
+
+<p>For example:</p>
+
+<p><img src="./images/rc_and_mine.png" alt="rc_and_mine" /></p>
+
+<p>c. run other clients like secret</p>
+
+<p>For example:</p>
+
+<p><img src="./images/secret.png" alt="secret" /></p>
+
+<h4 id="7-2-2-install-dependencies">7.2.2 Install dependencies</h4>
+
+<pre><code class="language-shell">$ source venv/bin/activate
+$ pip install flask
+$ pip install requests
+$ easy_install pycrypto
+</code></pre>
+
+<h3 id="7-3-run-node-py-and-test">7.3  Run <code>node.py</code>, and test!</h3>
+
+<pre><code class="language-shell">$ python node.py
+</code></pre>
+
+<h4 id="7-3-1-supported-commands-till-now">7.3.1 Supported commands till now</h4>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Explanation and help</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>. rc</code></td>
+<td>Activate a client for a <code>node.py</code> instance.</td>
+</tr>
+
+<tr>
+<td><code>mine</code></td>
+<td>Mine a block.</td>
+</tr>
+
+<tr>
+<td><code>chain</code></td>
+<td>Fetch current chain.</td>
+</tr>
+
+<tr>
+<td><code>transactions</code></td>
+<td>Fetch current <code>transaction pool</code>.</td>
+</tr>
+
+<tr>
+<td><code>secret</code></td>
+<td>Fetch secret, the private key in base64.</td>
+</tr>
+
+<tr>
+<td><code>sigScript.py sender recipient amount privateKeyB64</code></td>
+<td>Sign the transaction.</td>
+</tr>
+
+<tr>
+<td><code>sendTransaction</code></td>
+<td>Send transaction.</td>
+</tr>
+</tbody>
+</table>
+
+<p>With above commands, we could do blockchain mining, transaction signning, transactions etc.</p>
+
+<p><img src="./images/test_7.3.png" alt="test_7.3" /></p>
+
+<h2 id="8-consensus">8. Consensus</h2>
+
+<p>This is very cool. We’ve got a basic Blockchain that accepts transactions and allows us to mine new Blocks. But the whole point of Blockchains is that they should be <em>decentralized</em>. And if they’re decentralized, how on earth do we ensure that they all reflect the same chain? This is called the problem of <em>Consensus</em>, and we’ll have to implement a Consensus Algorithm if we want more than one node in our network.</p>
+
+<h3 id="8-1-registering-new-nodes">8.1 Registering new Nodes</h3>
+
+<p>Before we can implement a Consensus Algorithm, we need a way to let a node know about neighbouring nodes on the network. Each node on our network should keep a registry of other nodes on the network. Thus, we’ll need some more endpoints:</p>
+
+<ol>
+<li><code>/nodes</code>                  to fetch all neighbor nodes.</li>
+<li><code>/nodes/register</code> to accept a list of new nodes in the form of URLs.</li>
+<li><code>/nodes/resolve</code>   to implement our Consensus Algorithm, which resolves any conflicts—to ensure a node has the correct chain.</li>
+</ol>
+
+<p>The json data to be posted to node for registering a neighbor could be designed like below, to identify with the full schema of http URL.</p>
+
+<pre><code class="language-json">{ &quot;nodes&quot;: [&quot;http://localhost:5001&quot;] }
+</code></pre>
+
+<ul>
+<li>To better handle the string for URL, we could use <a href="https://docs.python.org/2/library/urlparse.html">urlparse</a>(python2) , in python3 it&rsquo;s <a href="https://docs.python.org/3/library/urllib.html">urllib.parse</a> .</li>
+<li>To store nodes data, we are using <code>set()</code> to avoid duplicated nodes being added.</li>
+</ul>
+
+<p><code>blockchain.py</code></p>
+
+<pre><code class="language-python">from urllib.parse import urlparse
+# ...
+
+class Blockchain:
+    def __init__(self):
+        # ...
+        self.nodes = set()
+        # ...
+
+    def register_node(self, address):
+        &quot;&quot;&quot;
+        Add a new node to the list of nodes
+
+        :param address: Address of node. Eg. 'http://192.168.0.5:5000'
+        &quot;&quot;&quot;
+
+        parsed_url = urlparse(address)
+        if parsed_url.netloc:
+            self.nodes.add(parsed_url.netloc)
+        elif parsed_url.path:
+            # Accepts an URL without scheme like '192.168.0.5:5000'.
+            self.nodes.add(parsed_url.path)
+        else:
+            raise ValueError('Invalid URL')
+
+
+</code></pre>
+
+<p><code>netloc</code> and <code>path</code> are used to detect different types of urls it handles.</p>
+
+<pre><code class="language-python">In [145]: parsed_url = urlparse(&quot;http://localhost:5000&quot;)
+
+In [146]: parsed_url.netloc
+Out[146]: 'localhost:5000'
+
+In [147]: parsed_url.path
+Out[147]: ''
+
+In [148]: parsed_url = urlparse(&quot;localhost:5000&quot;)
+
+In [149]: parsed_url.path
+Out[149]: 'localhost:5000'
+
+In [150]: parsed_url.netloc
+Out[150]: ''
+</code></pre>
+
+<h3 id="8-2-consensus-algorithm">8.2 Consensus Algorithm</h3>
+
+<p>As mentioned, a conflict is when one node has a different chain to another node. To resolve this, we’ll make the rule that <em>the longest valid chain is authoritative.</em> In other words, the longest chain on the network is the <em>de-facto</em> one. Using this algorithm, we reach <em>Consensus</em> amongst the nodes in our network.</p>
+
+<p>And for now, we will enable node to communicate with other node, as they only have http access, the way to make that happen is to use <code>requests</code>.</p>
+
+<p><code>valid_chain()</code> is to valid any chain, the <code>self</code> is for calling method in <code>self</code>.</p>
+
+<p><code>valid_chain()</code> is responsible for checking if a chain is valid by looping through each block and verifying both the hash and the proof.</p>
+
+<pre><code class="language-python">import requests
+
+class Blockchain:
+    # ...
+    def valid_chain(self, chain):
+        &quot;&quot;&quot;
+        Determine if a given blockchain is valid
+
+        :param chain: A blockchain
+        :return: True if valid, False if not
+        &quot;&quot;&quot;
+
+        last_block = chain[0]
+        current_index = 1
+
+        while current_index &lt; len(chain):
+            block = chain[current_index]
+
+            # Check that the hash of the block is correct
+            if block['previous_hash'] != self.hash(last_block):
+                return False
+
+            # Check that the Proof of Work is correct
+            if not self.valid_proof(last_block['proof'], block['proof'], self.hash(last_block)):
+                return False
+
+            last_block = block
+            current_index += 1
+
+        return True
+</code></pre>
+
+<p><code>resolve_conflicts</code> is to replace larger valid chain to current chain on the node.</p>
+
+<p><code>resolve_conflicts()</code> is a method which loops through all our neighbouring nodes, <em>downloads</em> their chains and verifies them using the above method. <strong>If a valid chain is found, whose length is greater than ours, we replace ours.</strong></p>
+
+<pre><code class="language-python">class Blockchain:
+    # ...
+    def resolve_conflicts(self):
+        &quot;&quot;&quot;
+        This is our consensus algorithm, it resolves conflicts
+        by replacing our chain with the longest one in the network.
+
+        :return: True if our chain was replaced, False if not
+        &quot;&quot;&quot;
+
+        neighbours = self.nodes
+        #print (str(self.nodes))
+
+        new_chain = None
+
+        # We're only looking for chains longer than ours
+        max_length = len(self.chain)
+        print (&quot;self.chain length: &quot; + str(max_length))
+
+        # Grab and verify the chains from all the nodes in our network
+        for node in neighbours:
+            response = requests.get('http://'+node+'/chain')
+            print (&quot;response.status_code: &quot; + str(response.status_code))
+
+            if response.status_code == 200:
+                length = response.json()['length']
+                chain = response.json()['chain']
+                print (&quot;node length: &quot; + str(length))
+                # Check if the length is longer and the chain is valid
+                if length &gt; max_length and self.valid_chain(chain):
+                    max_length = length
+                    new_chain = chain
+
+        # Replace our chain if we discovered a new, valid chain longer than ours
+        if new_chain:
+            self.chain = new_chain
+            print (&quot;self.chain:&quot; + str(self.chain))
+            return True
+
+        return False
+</code></pre>
+
+<h3 id="8-3-endpoints-of-nodes">8.3 endpoints of <code>/nodes/*</code></h3>
+
+<p><code>node.py</code></p>
+
+<pre><code class="language-python"># ...
+@app.route('/nodes', methods=['GET'])
+def all_nodes():
+    response = {
+        'nodes': blockchain.nodes,
+        'length': len(blockchain.nodes),
+    }
+    return jsonify(response), 200
+
+@app.route('/nodes/register', methods=['POST'])
+def register_nodes():
+    values = request.get_json()
+
+    nodes = values.get('nodes')
+    if nodes is None:
+        return &quot;Error: Please supply a valid list of nodes&quot;, 400
+
+    for node in nodes:
+        blockchain.register_node(node)
+
+    response = {
+        'message': 'New nodes have been added',
+        'total_nodes': list(blockchain.nodes),
+    }
+    return jsonify(response), 201
+
+@app.route('/nodes/resolve', methods=['GET'])
+def consensus():
+    replaced = blockchain.resolve_conflicts()
+
+    if replaced:
+        response = {
+            'message': 'Our chain was replaced',
+            'new_chain': blockchain.chain
+        }
+    else:
+        response = {
+            'message': 'Our chain is authoritative',
+            'chain': blockchain.chain
+        }
+
+    return jsonify(response), 200
+</code></pre>
+
+<h2 id="9-run-multiple-nodes">9 Run multiple nodes!</h2>
+
+<pre><code class="language-python">if __name__ == '__main__':
+    from argparse import ArgumentParser
+
+    parser = ArgumentParser()
+    parser.add_argument('-p', '--port', default=5000, type=int, help='port to listen on')
+    args = parser.parse_args()
+    port = args.port
+
+    app.run(debug=True, host='0.0.0.0', port=port)
+</code></pre>
+
+<p>Now it supports <code>--port &lt;port&gt;</code> options, below two terminal output is showing how two nodes were started with different ports.</p>
+
+<pre><code class="language-shell">(env) python node.py
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 277-203-847
+</code></pre>
+
+<pre><code class="language-shell">(env)python node.py --port 5001
+ * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 277-203-847
+</code></pre>
+
+<h2 id="10-try-final-version-till-now">10 Try final version till now</h2>
+
+<p>Below are supported commands I built(calling the endpoint we created).</p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Explanation and help</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>. rc</code></td>
+<td>Activate a client for a <code>node.py</code> instance.</td>
+</tr>
+
+<tr>
+<td><code>mine</code></td>
+<td>Mine a block.</td>
+</tr>
+
+<tr>
+<td><code>chain</code></td>
+<td>Fetch current chain.</td>
+</tr>
+
+<tr>
+<td><code>transactions</code></td>
+<td>Fetch current <code>transaction pool</code>.</td>
+</tr>
+
+<tr>
+<td><code>secret</code></td>
+<td>Fetch secret, the private key in base64.</td>
+</tr>
+
+<tr>
+<td><code>sigScript.py sender recipient amount privateKeyB64</code></td>
+<td>Sign the transaction.</td>
+</tr>
+
+<tr>
+<td><code>sendTransaction</code></td>
+<td>Send transaction.</td>
+</tr>
+
+<tr>
+<td><code>register</code></td>
+<td>Add/register a neighbor node.</td>
+</tr>
+
+<tr>
+<td><code>resolve</code></td>
+<td>Sync with neighbors, resolve conflicts.</td>
+</tr>
+
+<tr>
+<td><code>nodes</code></td>
+<td>Query all neighbor nodes.</td>
+</tr>
+</tbody>
+</table>
+
+<p>Hope you will enjoy and have fun with this blockchain :-).</p>
+
+<h3 id="play-with-block-chain-images-play-with-block-chain-png"><img src="./images/play_with_block_chain.png" alt="play_with_block_chain" /></h3>
+
+<pre><code class="language-shell">$ tree
+.
+├── blockchain.py
+├── chain
+├── config.py
+├── mine
+├── node.py
+├── nodes
+├── rc
+├── register
+├── resolve
+├── secret
+├── sendTransaction
+├── sigScript.py
+├── task-2-blockchain.md
+├── transactions
+└── wallet.py
+
+</code></pre>
+
+<p>ref: <a href="http://ipython.readthedocs.io/en/stable/config/extensions/autoreload.html">http://ipython.readthedocs.io/en/stable/config/extensions/autoreload.html</a></p>
+
+<p>ref: <a href="https://docs.python.org/3/library/base64.html">https://docs.python.org/3/library/base64.html</a></p>
+
+<p>ref: <a href="http://pythonhosted.org/pycrypto/toc-Crypto.Signature.PKCS1_v1_5-module.html">http://pythonhosted.org/pycrypto/toc-Crypto.Signature.PKCS1_v1_5-module.html</a></p>
+
+<p>ref: <a href="https://www.zhihu.com/question/23608006">https://www.zhihu.com/question/23608006</a></p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/tasks/task-1/" title="Build a web Tool"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/tasks/task-0/" title="Build a cli Tool" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1518176918"></script>
+    <script src="/js/perfect-scrollbar.min.js?1518176918"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1518176918"></script>
+    <script src="/js/jquery.sticky.js?1518176918"></script>
+    <script src="/js/featherlight.min.js?1518176918"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1518176918"></script>
+    <script src="/js/highlight.pack.js?1518176918"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1518176918"></script>
+    <script src="/js/learn.js?1518176918"></script>
+    <script src="/js/hugo-learn.js?1518176918"></script>
+
+    <link href="/mermaid/mermaid.css?1518176918" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1518176918"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.36" />
+    <meta name="description" content="">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title> :: Python Bootcamp</title>
+    
+    
+    <link href="/css/nucleus.css?1518176918" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1518176918" rel="stylesheet">
+    <link href="/css/hybrid.css?1518176918" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1518176918" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1518176918" rel="stylesheet">
+    <link href="/css/auto-complete.css?1518176918" rel="stylesheet">
+    <link href="/css/theme.css?1518176918" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1518176918" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1518176918"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://pyCamp.swdp.me">
+	<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1518173897900" class="icon" style="" viewBox="0 0 1029 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="557" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.234375" height="48"><defs><style type="text/css"></style></defs><path d="M610.56 7.68l38.4 8.533333 31.146667 11.093334 25.173333 12.8 19.2 13.653333 14.506667 14.506667 10.666666 14.506666 6.826667 14.08 4.266667 12.8 1.706666 11.093334 0.853334 8.533333-0.426667 5.546667V362.666667l-2.133333 26.88-5.546667 23.466666-8.96 19.626667-11.093333 16.213333-12.8 13.226667-14.08 10.666667-14.933334 8.106666-14.933333 5.973334-14.08 4.266666-12.8 2.986667-11.093333 1.706667-8.96 0.853333H376.746667l-29.44 2.133333-25.173334 5.973334-21.333333 9.386666-17.493333 11.52-14.08 13.653334-11.52 14.933333-8.533334 15.36-6.4 15.786667-4.266666 14.933333-2.986667 13.653333-1.706667 11.52-0.853333 8.96v130.56H137.813333l-8.96-1.28-11.946666-2.986666-13.653334-5.12-14.933333-7.68-15.36-11.093334-15.36-15.36-14.933333-19.626666-13.653334-25.173334-11.946666-31.146666-8.96-37.546667-5.973334-44.8L0 510.72l2.56-52.053333 6.826667-44.373334 10.24-37.12 13.653333-30.293333 15.36-24.32 17.066667-18.773333 17.92-14.08 17.92-10.24 17.066666-6.826667 15.36-4.266667 13.653334-2.133333 10.24-0.426667h6.826666l2.56 0.426667h348.16v-35.413333H266.24l-0.426667-117.333334-0.853333-15.786666 2.133333-14.506667 4.693334-13.226667 7.253333-11.946666 10.666667-11.093334 13.226666-9.813333 16.213334-8.533333 18.773333-7.68 21.76-6.4 24.746667-5.12 27.306666-4.266667 30.293334-2.56 32.853333-1.706667 35.84-0.853333 54.186667 2.133333 45.653333 5.546667z m-268.8 84.48l-9.813333 14.08-3.413334 17.493333 3.413334 17.493334 9.813333 14.506666 14.08 9.386667 17.493333 3.84 17.493334-3.84 14.08-9.386667 9.813333-14.506666 3.413333-17.493334-3.413333-17.493333-9.813333-14.08-14.08-9.386667-17.493334-3.84-17.493333 3.84-14.08 9.386667z" fill="#ffffff" p-id="558"></path><path d="M900.266667 260.693333l11.946666 2.56 13.653334 5.12 14.933333 7.68 15.36 11.52 15.36 14.933334 14.933333 20.053333 13.653334 25.173333 11.946666 31.146667 8.96 37.546667 5.973334 44.373333 2.133333 52.48-2.56 52.48-6.826667 44.373333-10.24 36.693334-13.653333 30.293333-15.36 24.32-17.066667 19.2-17.92 14.08-17.92 10.24-17.066666 6.826667-15.36 3.84-13.653334 2.133333-10.24 0.853333-6.826666-0.426666h-350.72v34.986666h249.173333l0.426667 117.76 0.853333 15.36-2.133333 14.506667-4.693334 13.226667-7.253333 12.373333-10.666667 10.666667-13.226666 10.24-16.213334 8.533333-18.773333 7.253333-21.76 6.4-24.746667 5.546667-27.306666 3.84-30.293334 2.986667-32.853333 1.706666-35.84 0.426667-54.186667-1.706667-45.653333-5.973333-38.4-8.533333-31.146667-10.666667-25.173333-12.8-19.2-14.08-14.506667-14.506667-10.666666-14.506666-6.826667-14.08-4.266667-12.8-1.706666-10.666667-0.853334-8.533333 0.426667-5.546667v-227.84l2.133333-27.306667 5.546667-23.04 8.96-19.626666 11.093333-16.213334 12.8-13.653333 14.08-10.24 14.933334-8.533333 14.933333-5.973334 14.08-4.266666 12.8-2.56 11.093333-1.706667 8.96-0.853333 5.546667-0.426667h249.173333l29.44-2.133333 25.173334-5.973334 21.333333-8.96 17.493333-11.946666 14.08-13.653334 11.52-14.933333 8.533334-15.36 6.4-15.36 4.266666-14.933333 2.986667-13.653334 1.706667-11.946666 0.853333-8.96V258.986667h89.173333l5.973334 0.426666 8.96 1.28z m-276.053334 608l-9.813333 14.08-3.413333 17.493334 3.413333 17.493333 9.813333 14.08 14.08 9.813333 17.493334 3.413334 17.493333-3.413334 14.08-9.813333 9.813333-14.08 3.413334-17.493333-3.413334-17.493334-9.813333-14.08-14.08-9.813333-17.493333-3.413333-17.493334 3.413333-14.08 9.813333z" fill="#ffffff" p-id="559"></path></svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1518176918"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1518176918"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/';
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1518176918"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/tasks/" title="Tasks" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/tasks/">
+          Tasks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tasks/task-1/" title="Build a web Tool" class="dd-item ">
+        <a href="/tasks/task-1/">
+        Build a web Tool
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tasks/task-2/" title="Build a blockchain" class="dd-item ">
+        <a href="/tasks/task-2/">
+        Build a blockchain
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tasks/task-0/" title="Build a cli Tool" class="dd-item ">
+        <a href="/tasks/task-0/">
+        Build a cli Tool
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+
+        
+        <div id="body-inner">
+          
+
+        
+
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
+</span>
+
+ 
+
+
+<h1 id="python-boot-camp">Python Boot-camp</h1>
+
+<p>[TOC]</p>
+
+<h2 id="overview">Overview</h2>
+
+<h3 id="workshop-video">Workshop Video</h3>
+
+<p><code>\\***REMOVED***\Usertmp$\pyCamp\Video</code></p>
+
+<h3 id="workshop-keynotes-and-codes">Workshop Keynotes and Codes</h3>
+
+<p><code>\\drive.swdp.me\learning\pyCamp\codesAndKeynotes</code></p>
+
+<p>###</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Time</th>
+<th>Task</th>
+<th>Outcome</th>
+<th>Reference</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">W0</td>
+<td>Prepare environment, join the slack channel for discussion or learn from historical discussion.</td>
+<td>A ready to use python envrionment.</td>
+<td>This document</td>
+</tr>
+
+<tr>
+<td align="left">W1</td>
+<td>Task 0, build a cli tool</td>
+<td>Learn basic concept, build a command line tool, run it.</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left"></td>
+<td>Task 1, build a web application.</td>
+<td>Reach more python concepts, build a website, build a webapp with same function of task</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left"></td>
+<td>Task 2, build a blockchain.</td>
+<td>Start building your first OOP python project, organize a bigger flask project.</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">W2</td>
+<td>Task 3, build a microservice project</td>
+<td>TBD</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left"></td>
+<td>Task 4, build an openstack project</td>
+<td>TBD</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="preparation">Preparation</h2>
+
+<p>Slack channel: <a href="https://project-inno.slack.com/messages/C8Z6GEF16">#py-camp</a></p>
+
+<h3 id="environment-setup">Environment setup</h3>
+
+<p>a Linux VM (Ubuntu) will do, reference: <a href="https://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox">https://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox</a></p>
+
+<ul>
+<li>3G ram</li>
+<li>1-2 CPU</li>
+</ul>
+
+<h3 id="a-just-working-editor">A just working editor</h3>
+
+<p><code>Sublime text</code>/<code>Atom</code>/<code>VS code</code> will do the job, I was using <code>Sublime Text 3</code></p>
+
+<p>reference: <a href="http://tipsonubuntu.com/2017/05/30/install-sublime-text-3-ubuntu-16-04-official-way/">http://tipsonubuntu.com/2017/05/30/install-sublime-text-3-ubuntu-16-04-official-way/</a></p>
+
+<h3 id="how-to-run-your-python-code">How to run your python code?</h3>
+
+<p><strong>Preparation</strong>:</p>
+
+<p>to avoid anything stops you from the beginning let&rsquo;s just use python3 directly, if you know how to use <code>virtualenv</code>, use it instead, if you don&rsquo;t know <code>virtualenv</code> do it as below.</p>
+
+<ul>
+<li>install pip for python3, upgrade it then:</li>
+</ul>
+
+<pre><code class="language-bash">$ sudo apt-get install python3-pip -y
+$ sudo pip3 install --upgrade pip
+</code></pre>
+
+<ul>
+<li>install <code>ipython</code> as your python playground console</li>
+</ul>
+
+<pre><code class="language-bash">$ sudo pip3 install ipython
+</code></pre>
+
+<p><strong>Hello world!</strong> from ipython</p>
+
+<p>You could use it in one terminal for debugging for always, it&rsquo;s better than the python console in some ways.</p>
+
+<pre><code class="language-shell">$ ipython3
+Python 3.5.2 (default, Nov 23 2017, 16:37:01)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.2.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: print (&quot;hello world!&quot;)
+hello world!
+In [2]: exit
+$
+</code></pre>
+
+<p><strong>Hello world!</strong> from your first python script</p>
+
+<pre><code class="language-shell">$ cat hello_world.py
+print (&quot;Hello world!&quot;)
+
+$ python3 hello_world.py
+Hello world!
+</code></pre>
+
+<p>Congratulations! One more step left:</p>
+
+<h3 id="go-through-the-tutor">Go through the tutor</h3>
+
+<p>reference: <a href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial/</a></p>
+
+<p>or: <a href="http://www.pythondoc.com/pythontutorial3/">http://www.pythondoc.com/pythontutorial3/</a></p>
+
+<h2 id="tasks">Tasks</h2>
+
+<h3 id="task-0-create-a-cli-tool">Task 0, create a cli tool</h3>
+
+<p>Let&rsquo;s create tool to parse a <code>nova/nova.conf</code> file in order to get expected values, like <code>my_ip</code> , if  what <code>virt_type</code>  etc..</p>
+
+<p>What needs to be done?</p>
+
+<ul>
+<li>A function to handle the actual input.</li>
+<li>make it handle arguments from command line</li>
+<li>Let&rsquo;s make it professional</li>
+<li>Use <code>docopt</code> to simplify it! reference: <a href="http://docopt.org">http://docopt.org</a></li>
+</ul>
+
+<p>Further study:</p>
+
+<ul>
+<li>Shebang ref: <a href="https://en.wikipedia.org/wiki/Shebang_%28Unix%293">https://en.wikipedia.org/wiki/Shebang_%28Unix%293</a></li>
+<li><code>virtualenv</code></li>
+<li>parse from or write to json, excel, xml, csv etc ?
+
+<ul>
+<li>built-in library: <a href="https://docs.python.org/3/library/index.html">https://docs.python.org/3/library/index.html</a></li>
+<li>Awesome Python: <a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
+</ul></li>
+<li>Doing things for servers? paramiko / ansible</li>
+<li>exceptions: <a href="http://www.runoob.com/python/python-exceptions.html">http://www.runoob.com/python/python-exceptions.html</a></li>
+</ul>
+
+<p><strong>After class task:</strong></p>
+
+<ul>
+<li>create a cli tool</li>
+</ul>
+
+<h3 id="task-1-create-a-website">Task 1, create a website</h3>
+
+<p>This task is to create a web app with flask, following the <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world-legacy">flask-mega-tutorial</a> first three chapters.</p>
+
+<p>reference:</p>
+
+<ul>
+<li>innoSearch project: <a href="https://github.com/littlewey/yet-another-GSC-C-lighthouse">https://github.com/littlewey/yet-another-GSC-C-lighthouse</a></li>
+<li>ldif-compare: <a href="https://github.com/littlewey/ldif-compare">https://github.com/littlewey/ldif-compare</a></li>
+</ul>
+
+<p><strong>After class task:</strong></p>
+
+<ul>
+<li>create a web tool, which could reuse the main function of Task 0.</li>
+</ul>
+
+<h3 id="task-2-create-a-blockchain">Task 2, create a <code>blockchain</code></h3>
+
+<blockquote>
+<p>Our task demo is highly reusing code and even some words in <a href="https://hackernoon.com/learn-blockchains-by-building-one-117428612f46">https://hackernoon.com/learn-blockchains-by-building-one-117428612f46</a> (many thanks to <a href="https://hackernoon.com/@vanflymen?source=post_header_lockup">Daniel van Flymen</a>), some enhancements were added on top of that here including sender address verification, and some script clients.</p>
+</blockquote>
+
+<p>In this task, we will create a simple part of blockchain application like <code>bitcoin</code>.</p>
+
+<p>Things we will go though:</p>
+
+<ul>
+<li>Some object-oriented programing (not just call class from a python module)</li>
+<li>http request</li>
+<li>flask as http api endpoints</li>
+</ul>
+
+<p><strong>After class task:</strong></p>
+
+<ul>
+<li>create the blockchain app following the tutorial, study the code (as explained in class), if possible improve it.</li>
+</ul>
+
+<h3 id="task-3-create-a-big-project-micro-service-enabled">Task 3, create a big project(micro service enabled)</h3>
+
+<blockquote>
+<p>haproxy, etcd, k8s etc&hellip;</p>
+</blockquote>
+
+<p>To be continued in next presenting week.</p>
+
+<h3 id="task-4-create-a-tool-based-on-oslo">Task 4, create a tool based on oslo</h3>
+
+<blockquote>
+<p>Openstack related</p>
+</blockquote>
+
+<p>To be continued in next presenting week.</p>
+	
+  
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+        
+            <a class="nav nav-next" href="/tasks/" title="Tasks" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1518176918"></script>
+    <script src="/js/perfect-scrollbar.min.js?1518176918"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1518176918"></script>
+    <script src="/js/jquery.sticky.js?1518176918"></script>
+    <script src="/js/featherlight.min.js?1518176918"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1518176918"></script>
+    <script src="/js/highlight.pack.js?1518176918"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1518176918"></script>
+    <script src="/js/learn.js?1518176918"></script>
+    <script src="/js/hugo-learn.js?1518176918"></script>
+
+    <link href="/mermaid/mermaid.css?1518176918" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1518176918"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

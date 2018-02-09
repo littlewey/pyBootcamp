@@ -1,0 +1,21 @@
+baseURL = "http://pyCamp.swdp.me/"
+languageCode = "en-us"
+title = "Python Bootcamp"
+# Change the default theme to be use when building the site with Hugo
+theme = "hugo-theme-learn"
+
+# For search functionnality
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/littlewey/pyBootcamp"
+weight = 10
+
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-bullhorn'></i> Slack-Channel"
+url = "https://project-inno.slack.com/messages/C8Z6GEF16"
+weight = 30
