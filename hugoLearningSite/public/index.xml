@@ -12,23 +12,25 @@
     
     
     <item>
-      <title>Build a web Tool</title>
-      <link>http://pyCamp.swdp.me/tasks/task-1/</link>
-      <pubDate>Fri, 09 Feb 2018 19:11:59 +0800</pubDate>
+      <title>Environment Setup</title>
+      <link>http://pyCamp.swdp.me/preparation/preparation/</link>
+      <pubDate>Fri, 09 Feb 2018 19:41:55 +0800</pubDate>
       
-      <guid>http://pyCamp.swdp.me/tasks/task-1/</guid>
-      <description>This task is to create a web app with flask, following the flask-mega-tutorial first three chapters.
-reference:
- innoSearch project: https://github.com/littlewey/yet-another-GSC-C-lighthouse ldif-compare: https://github.com/littlewey/ldif-compare  After class task:
- create a web tool, which could reuse the main function of Task 0.  </description>
+      <guid>http://pyCamp.swdp.me/preparation/preparation/</guid>
+      <description>Slack channel: #py-camp
+Environment setup a Linux VM (Ubuntu) will do, reference: https://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox
+ 3G ram 1-2 CPU  A just working editor Sublime text/Atom/VS code will do the job, I was using Sublime Text 3
+reference: http://tipsonubuntu.com/2017/05/30/install-sublime-text-3-ubuntu-16-04-official-way/
+How to run your python code? Preparation:
+to avoid anything stops you from the beginning let&amp;rsquo;s just use python3 directly, if you know how to use virtualenv, use it instead, if you don&amp;rsquo;t know virtualenv do it as below.</description>
     </item>
     
     <item>
-      <title>Build a blockchain</title>
-      <link>http://pyCamp.swdp.me/tasks/task-2/</link>
+      <title>Keynote: Build a blockchain</title>
+      <link>http://pyCamp.swdp.me/tasks/task-2/task-2/</link>
       <pubDate>Fri, 09 Feb 2018 19:11:59 +0800</pubDate>
       
-      <guid>http://pyCamp.swdp.me/tasks/task-2/</guid>
+      <guid>http://pyCamp.swdp.me/tasks/task-2/task-2/</guid>
       <description>Our task demo is highly reusing code and even some words in https://hackernoon.com/learn-blockchains-by-building-one-117428612f46 (many thanks to Daniel van Flymen), some enhancements were added on top of that here including sender address verification, and some script clients.
  In this task, we will create a simple part of blockchain application like bitcoin.
 Things we will go though:
@@ -36,11 +38,11 @@ Things we will go though:
     </item>
     
     <item>
-      <title>Build a cli Tool</title>
-      <link>http://pyCamp.swdp.me/tasks/task-0/</link>
+      <title>Keynote: Build a cli Tool</title>
+      <link>http://pyCamp.swdp.me/tasks/task-0/task-0/</link>
       <pubDate>Fri, 09 Feb 2018 19:11:59 +0800</pubDate>
       
-      <guid>http://pyCamp.swdp.me/tasks/task-0/</guid>
+      <guid>http://pyCamp.swdp.me/tasks/task-0/task-0/</guid>
       <description>Let&amp;rsquo;s create tool to parse a nova/nova.conf file in order to get expected values, like my_ip , if what virt_type etc..
 What needs to be done?
  A function to handle the actual input. make it handle arguments from command line Let&amp;rsquo;s make it professional Use docopt to simplify it!  reference: http://docopt.org
@@ -48,6 +50,54 @@ What needs to be done?
  [TOC]
 After class task:
  create a cli tool  Input processing reference: https://docs.</description>
+    </item>
+    
+    <item>
+      <title>Keynote: Build a web Tool</title>
+      <link>http://pyCamp.swdp.me/tasks/task-1/task-1/</link>
+      <pubDate>Fri, 09 Feb 2018 19:11:59 +0800</pubDate>
+      
+      <guid>http://pyCamp.swdp.me/tasks/task-1/task-1/</guid>
+      <description>This task is to create a web app with flask, following the flask-mega-tutorial first three chapters.
+reference:
+ innoSearch project: https://github.com/littlewey/yet-another-GSC-C-lighthouse ldif-compare: https://github.com/littlewey/ldif-compare  After class task:
+ create a web tool, which could reuse the main function of Task 0.  </description>
+    </item>
+    
+    <item>
+      <title>Video: Build a cli Tool</title>
+      <link>http://pyCamp.swdp.me/tasks/task-0/video/</link>
+      <pubDate>Fri, 09 Feb 2018 19:11:59 +0800</pubDate>
+      
+      <guid>http://pyCamp.swdp.me/tasks/task-0/video/</guid>
+      <description>\\***REMOVED***\Usertmp$\pyCamp\Video</description>
+    </item>
+    
+    <item>
+      <title>Video: Build a blockchain</title>
+      <link>http://pyCamp.swdp.me/tasks/task-2/video/</link>
+      <pubDate>Fri, 09 Feb 2018 19:11:59 +0800</pubDate>
+      
+      <guid>http://pyCamp.swdp.me/tasks/task-2/video/</guid>
+      <description>\\***REMOVED***\Usertmp$\pyCamp\Video</description>
+    </item>
+    
+    <item>
+      <title>Video: Build a web Tool</title>
+      <link>http://pyCamp.swdp.me/tasks/task-1/video/</link>
+      <pubDate>Fri, 09 Feb 2018 19:11:59 +0800</pubDate>
+      
+      <guid>http://pyCamp.swdp.me/tasks/task-1/video/</guid>
+      <description>\\***REMOVED***\Usertmp$\pyCamp\Video</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://pyCamp.swdp.me/video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://pyCamp.swdp.me/video/</guid>
+      <description></description>
     </item>
     
   </channel>

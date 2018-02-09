@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.36" />
+    <meta name="description" content="">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Keynote: Build a cli Tool :: Python Bootcamp</title>
+    
+    
+    <link href="/css/nucleus.css?1518180202" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1518180202" rel="stylesheet">
+    <link href="/css/hybrid.css?1518180202" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1518180202" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1518180202" rel="stylesheet">
+    <link href="/css/auto-complete.css?1518180202" rel="stylesheet">
+    <link href="/css/theme.css?1518180202" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1518180202" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1518180202"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/tasks/task-0/task-0/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://pyCamp.swdp.me">
+	<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1518173897900" class="icon" style="" viewBox="0 0 1029 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="557" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.234375" height="48"><defs><style type="text/css"></style></defs><path d="M610.56 7.68l38.4 8.533333 31.146667 11.093334 25.173333 12.8 19.2 13.653333 14.506667 14.506667 10.666666 14.506666 6.826667 14.08 4.266667 12.8 1.706666 11.093334 0.853334 8.533333-0.426667 5.546667V362.666667l-2.133333 26.88-5.546667 23.466666-8.96 19.626667-11.093333 16.213333-12.8 13.226667-14.08 10.666667-14.933334 8.106666-14.933333 5.973334-14.08 4.266666-12.8 2.986667-11.093333 1.706667-8.96 0.853333H376.746667l-29.44 2.133333-25.173334 5.973334-21.333333 9.386666-17.493333 11.52-14.08 13.653334-11.52 14.933333-8.533334 15.36-6.4 15.786667-4.266666 14.933333-2.986667 13.653333-1.706667 11.52-0.853333 8.96v130.56H137.813333l-8.96-1.28-11.946666-2.986666-13.653334-5.12-14.933333-7.68-15.36-11.093334-15.36-15.36-14.933333-19.626666-13.653334-25.173334-11.946666-31.146666-8.96-37.546667-5.973334-44.8L0 510.72l2.56-52.053333 6.826667-44.373334 10.24-37.12 13.653333-30.293333 15.36-24.32 17.066667-18.773333 17.92-14.08 17.92-10.24 17.066666-6.826667 15.36-4.266667 13.653334-2.133333 10.24-0.426667h6.826666l2.56 0.426667h348.16v-35.413333H266.24l-0.426667-117.333334-0.853333-15.786666 2.133333-14.506667 4.693334-13.226667 7.253333-11.946666 10.666667-11.093334 13.226666-9.813333 16.213334-8.533333 18.773333-7.68 21.76-6.4 24.746667-5.12 27.306666-4.266667 30.293334-2.56 32.853333-1.706667 35.84-0.853333 54.186667 2.133333 45.653333 5.546667z m-268.8 84.48l-9.813333 14.08-3.413334 17.493333 3.413334 17.493334 9.813333 14.506666 14.08 9.386667 17.493333 3.84 17.493334-3.84 14.08-9.386667 9.813333-14.506666 3.413333-17.493334-3.413333-17.493333-9.813333-14.08-14.08-9.386667-17.493334-3.84-17.493333 3.84-14.08 9.386667z" fill="#ffffff" p-id="558"></path><path d="M900.266667 260.693333l11.946666 2.56 13.653334 5.12 14.933333 7.68 15.36 11.52 15.36 14.933334 14.933333 20.053333 13.653334 25.173333 11.946666 31.146667 8.96 37.546667 5.973334 44.373333 2.133333 52.48-2.56 52.48-6.826667 44.373333-10.24 36.693334-13.653333 30.293333-15.36 24.32-17.066667 19.2-17.92 14.08-17.92 10.24-17.066666 6.826667-15.36 3.84-13.653334 2.133333-10.24 0.853333-6.826666-0.426666h-350.72v34.986666h249.173333l0.426667 117.76 0.853333 15.36-2.133333 14.506667-4.693334 13.226667-7.253333 12.373333-10.666667 10.666667-13.226666 10.24-16.213334 8.533333-18.773333 7.253333-21.76 6.4-24.746667 5.546667-27.306666 3.84-30.293334 2.986667-32.853333 1.706666-35.84 0.426667-54.186667-1.706667-45.653333-5.973333-38.4-8.533333-31.146667-10.666667-25.173333-12.8-19.2-14.08-14.506667-14.506667-10.666666-14.506666-6.826667-14.08-4.266667-12.8-1.706666-10.666667-0.853334-8.533333 0.426667-5.546667v-227.84l2.133333-27.306667 5.546667-23.04 8.96-19.626666 11.093333-16.213334 12.8-13.653333 14.08-10.24 14.933334-8.533333 14.933333-5.973334 14.08-4.266666 12.8-2.56 11.093333-1.706667 8.96-0.853333 5.546667-0.426667h249.173333l29.44-2.133333 25.173334-5.973334 21.333333-8.96 17.493333-11.946666 14.08-13.653334 11.52-14.933333 8.533334-15.36 6.4-15.36 4.266666-14.933333 2.986667-13.653334 1.706667-11.946666 0.853333-8.96V258.986667h89.173333l5.973334 0.426666 8.96 1.28z m-276.053334 608l-9.813333 14.08-3.413333 17.493334 3.413333 17.493333 9.813333 14.08 14.08 9.813333 17.493334 3.413334 17.493333-3.413334 14.08-9.813333 9.813333-14.08 3.413334-17.493333-3.413334-17.493334-9.813333-14.08-14.08-9.813333-17.493333-3.413333-17.493334 3.413333-14.08 9.813333z" fill="#ffffff" p-id="559"></path></svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1518180202"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1518180202"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/';
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1518180202"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/preparation/" title="Preparation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/preparation/">
+          Preparation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/preparation/preparation/" title="Environment Setup" class="dd-item ">
+        <a href="/preparation/preparation/">
+        Environment Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/tasks/" title="Tasks" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/tasks/">
+          Tasks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/tasks/task-0/" title="Build a cli Tool" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/tasks/task-0/">
+          Build a cli Tool
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tasks/task-0/task-0/" title="Keynote: Build a cli Tool" class="dd-item active">
+        <a href="/tasks/task-0/task-0/">
+        Keynote: Build a cli Tool
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tasks/task-0/video/" title="Video: Build a cli Tool" class="dd-item ">
+        <a href="/tasks/task-0/video/">
+        Video: Build a cli Tool
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/tasks/task-1/" title="Build a web Tool" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/tasks/task-1/">
+          Build a web Tool
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tasks/task-1/task-1/" title="Keynote: Build a web Tool" class="dd-item ">
+        <a href="/tasks/task-1/task-1/">
+        Keynote: Build a web Tool
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tasks/task-1/video/" title="Video: Build a web Tool" class="dd-item ">
+        <a href="/tasks/task-1/video/">
+        Video: Build a web Tool
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/tasks/task-2/" title="Build a blockchain" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/tasks/task-2/">
+          Build a blockchain
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tasks/task-2/task-2/" title="Keynote: Build a blockchain" class="dd-item ">
+        <a href="/tasks/task-2/task-2/">
+        Keynote: Build a blockchain
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tasks/task-2/video/" title="Video: Build a blockchain" class="dd-item ">
+        <a href="/tasks/task-2/video/">
+        Video: Build a blockchain
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/littlewey/pyBootcamp"><i class='fa fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://project-inno.slack.com/messages/C8Z6GEF16"><i class='fa fa-bullhorn'></i> Slack-Channel</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/tasks/'>Tasks</a> > <a href='/tasks/task-0/'>Build a cli Tool</a> > Keynote: Build a cli Tool
+          
+         
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#input-processing">Input processing</a></li>
+<li><a href="#step-1-the-main-function">Step 1 the main function</a></li>
+<li><a href="#step-2-input">Step 2 Input</a>
+<ul>
+<li><a href="#parse-arguments">Parse arguments</a></li>
+<li><a href="#read-file">Read file</a></li>
+</ul></li>
+<li><a href="#a-working-tool-was-done">A working tool was done!</a></li>
+<li><a href="#can-we-make-life-easier">Can we make life easier?</a>
+<ul>
+<li><a href="#docopt-example">docopt example</a></li>
+</ul></li>
+<li><a href="#what-else">What else?</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Keynote: Build a cli Tool</h1>
+          
+
+        
+
+
+
+
+<p>Let&rsquo;s create tool to parse a <code>nova/nova.conf</code> file in order to get expected values, like <code>my_ip</code> , if  what <code>virt_type</code>  etc..</p>
+
+<p>What needs to be done?</p>
+
+<ul>
+<li>A function to handle the actual input.</li>
+<li>make it handle arguments from command line</li>
+<li>Let&rsquo;s make it professional</li>
+<li>Use <code>docopt</code> to simplify it!</li>
+</ul>
+
+<p>reference: <a href="http://docopt.org">http://docopt.org</a></p>
+
+<blockquote>
+<p>deal with excel/csv etc&hellip;</p>
+</blockquote>
+
+<p>[TOC]</p>
+
+<p>After class task:</p>
+
+<ul>
+<li>create a cli tool</li>
+</ul>
+
+<h2 id="input-processing">Input processing</h2>
+
+<p>reference: <a href="https://docs.openstack.org/ocata/config-reference/compute/nova-conf-samples.html">https://docs.openstack.org/ocata/config-reference/compute/nova-conf-samples.html</a></p>
+
+<p>The input is something like:</p>
+
+<pre><code class="language-python">[DEFAULT]
+
+# LOGS/STATE
+logdir=/var/log/nova
+state_path=/var/lib/nova
+lock_path=/var/lock/nova
+rootwrap_config=/etc/nova/rootwrap.conf
+
+# SCHEDULER
+compute_scheduler_driver=nova.scheduler.filter_scheduler.FilterScheduler
+
+# VOLUMES
+# configured in cinder.conf
+
+# COMPUTE
+compute_driver=libvirt.LibvirtDriver
+instance_name_template=instance-%08x
+api_paste_config=/etc/nova/api-paste.ini
+
+# COMPUTE/APIS: if you have separate configs for separate services
+# this flag is required for both nova-api and nova-compute
+allow_resize_to_same_host=True
+
+# APIS
+osapi_compute_extension=nova.api.openstack.compute.contrib.standard_extensions
+ec2_dmz_host=192.168.206.130
+s3_host=192.168.206.130
+
+# RABBITMQ
+rabbit_host=192.168.206.130
+
+# GLANCE
+image_service=nova.image.glance.GlanceImageService
+
+# NETWORK
+network_manager=nova.network.manager.FlatDHCPManager
+force_dhcp_release=True
+dhcpbridge_flagfile=/etc/nova/nova.conf
+firewall_driver=nova.virt.libvirt.firewall.IptablesFirewallDriver
+# Change my_ip to match each host
+my_ip=192.168.206.130
+public_interface=eth0
+vlan_interface=eth0
+flat_network_bridge=br100
+flat_interface=eth0
+
+# NOVNC CONSOLE
+novncproxy_base_url=http://192.168.206.130:6080/vnc_auto.html
+# Change vncserver_proxyclient_address and vncserver_listen to match each compute host
+vncserver_proxyclient_address=192.168.206.130
+vncserver_listen=192.168.206.130
+
+# AUTHENTICATION
+auth_strategy=keystone
+[keystone_authtoken]
+auth_host = 127.0.0.1
+auth_port = 35357
+auth_protocol = http
+admin_tenant_name = service
+admin_user = nova
+admin_password = nova
+signing_dirname = /tmp/keystone-signing-nova
+
+# GLANCE
+[glance]
+api_servers=192.168.206.130:9292
+
+# DATABASE
+[database]
+connection=mysql+pymysql://nova:yourpassword@192.168.206.130/nova
+
+# LIBVIRT
+[libvirt]
+virt_type=qemu
+</code></pre>
+
+<p>Let&rsquo;s simplify it for showing in one screen:</p>
+
+<pre><code class="language-python">[DEFAULT]
+
+# NETWORK
+network_manager=nova.network.manager.FlatDHCPManager
+force_dhcp_release=True
+dhcpbridge_flagfile=/etc/nova/nova.conf
+firewall_driver=nova.virt.libvirt.firewall.IptablesFirewallDriver
+# Change my_ip to match each host
+my_ip=192.168.206.130
+public_interface=eth0
+vlan_interface=eth0
+flat_network_bridge=br100
+flat_interface=eth0
+# LIBVIRT
+[libvirt]
+virt_type=qemu
+</code></pre>
+
+<p>Load it as a string:</p>
+
+<p><code>&quot;&quot;&quot;</code> is used for multi-line string</p>
+
+<pre><code class="language-python">In [1]: input = &quot;&quot;&quot;
+   ...: [DEFAULT]
+   ...:
+   ...: # NETWORK
+   ...: network_manager=nova.network.manager.FlatDHCPManager
+   ...: force_dhcp_release=True
+   ...: dhcpbridge_flagfile=/etc/nova/nova.conf
+   ...: firewall_driver=nova.virt.libvirt.firewall.IptablesFirewallDriver
+   ...: # Change my_ip to match each host
+   ...: my_ip=192.168.206.130
+   ...: public_interface=eth0
+   ...: vlan_interface=eth0
+   ...: flat_network_bridge=br100
+   ...: flat_interface=eth0
+   ...: # LIBVIRT
+   ...: [libvirt]
+   ...: virt_type=qemu&quot;&quot;&quot;
+In [4]: print (input)
+
+[DEFAULT]
+
+# NETWORK
+network_manager=nova.network.manager.FlatDHCPManager
+force_dhcp_release=True
+dhcpbridge_flagfile=/etc/nova/nova.conf
+firewall_driver=nova.virt.libvirt.firewall.IptablesFirewallDriver
+# Change my_ip to match each host
+my_ip=192.168.206.130
+public_interface=eth0
+vlan_interface=eth0
+flat_network_bridge=br100
+flat_interface=eth0
+# LIBVIRT
+[libvirt]
+virt_type=qemu
+</code></pre>
+
+<p>Let&rsquo;s do some pre-processing on it.</p>
+
+<pre><code class="language-python">In [5]: inputList = input.split(&quot;\n&quot;)
+
+In [6]: print (inputList)
+['', '[DEFAULT]', '', '# NETWORK', 'network_manager=nova.network.manager.FlatDHCPManager', 'force_dhcp_release=True', 'dhcpbridge_flagfile=/etc/nova/nova.conf', 'firewall_driver=nova.virt.libvirt.firewall.IptablesFirewallDriver', '# Change my_ip to match each host', 'my_ip=192.168.206.130', 'public_interface=eth0', 'vlan_interface=eth0', 'flat_network_bridge=br100', 'flat_interface=eth0', '# LIBVIRT', '[libvirt]', 'virt_type=qemu']
+
+In [7]: type(inputList)
+Out[7]: list
+</code></pre>
+
+<p>Now we have a list, where all items come from the lines of <code>nova.conf</code>, let&rsquo;s do something for it!</p>
+
+<h2 id="step-1-the-main-function">Step 1 the main function</h2>
+
+<p>We could build a function to parse specific parameter name and return the value ;-).</p>
+
+<pre><code class="language-python">def parse(par,inputList):
+  #magic things
+  return valueForThePar
+</code></pre>
+
+<p>Then let&rsquo;s do the <code>magic</code> :</p>
+
+<pre><code class="language-python">def parse(par,inputList):
+  valueForThePar = &quot;oops: there is no &quot; + par + &quot; found.&quot;
+  for line in inputList:
+    line = line.strip().split(&quot;=&quot;)
+    if par == line[0]:
+      valueForThePar = line[1]
+  return valueForThePar
+</code></pre>
+
+<p>Let&rsquo;s run it:</p>
+
+<pre><code class="language-python">In [12]: def parse(par,inputList):
+    ...:   valueForThePar = &quot;oops: there is no &quot; + par + &quot; found.&quot;
+    ...:   for line in inputList:
+    ...:     line = line.strip().split(&quot;=&quot;)
+    ...:     if par == line[0]:
+    ...:       valueForThePar = line[1]
+    ...:   return valueForThePar
+    ...:
+
+In [13]: parse(&quot;neutron&quot;,inputList)
+Out[13]: '#Err: there is no neutron found.'
+
+In [14]: parse(&quot;virt_type&quot;,inputList)
+Out[14]: 'qemu'
+</code></pre>
+
+<p>Seems working yet easy, correct?</p>
+
+<ul>
+<li>But we need a real program to handle a file as input instead of a string coming from copy paste, how could we do that?</li>
+<li>How could we let the program know which parameter need to be parsed?</li>
+</ul>
+
+<h2 id="step-2-input">Step 2 Input</h2>
+
+<h3 id="parse-arguments">Parse arguments</h3>
+
+<p>Let&rsquo;s use <code>sys.argv</code>, which is a list of the argument variables passed during program calling.</p>
+
+<p>For example, let&rsquo;s write this test-argv.py:</p>
+
+<pre><code class="language-python">import sys
+print (sys.argv[0])
+</code></pre>
+
+<p>run it:</p>
+
+<pre><code class="language-bash">$ python3 test-argv.py
+['test-argv.py']
+</code></pre>
+
+<p>Confused? How about this?</p>
+
+<pre><code class="language-python">import sys
+print (sys.argv[0:])
+</code></pre>
+
+<p>run it with different arguments:</p>
+
+<pre><code class="language-bash">$ python3 test-argv.py
+['test-argv.py']
+$ python3 test-argv.py a b c
+['test-argv.py', 'a', 'b', 'c']
+</code></pre>
+
+<p>Now with this power we could design our tool like this:</p>
+
+<p><code>python3 our-cool-tool-file-name.py --input &lt;path-to-input-file&gt; --par &lt;par&gt;</code></p>
+
+<p>Then it comes to the hardest part, naming the tool. Let&rsquo;s call it <code>novaConfParser.py</code> ;-).</p>
+
+<p>Let&rsquo;s write <code>novaConfParser.py</code>, it&rsquo;s something like:</p>
+
+<pre><code class="language-python">def parseArgVars():
+    pass
+# parse input in list type
+def parse(par,inputList):
+  valueForThePar = &quot;oops: there is no &quot; + par + &quot; found.&quot;
+  for line in inputList:
+    line = line.strip().split(&quot;=&quot;)
+    line = [item.strip() for item in line]
+    if par == line[0]:
+      valueForThePar = line[1]
+  return valueForThePar
+
+# ... something in between
+
+# main process
+def main():
+    parseArgVars()
+    print (parse(par,inputList))
+main()
+</code></pre>
+
+<p>For the part of <code>parseArgVars()</code>, let&rsquo;s make it as below, which just parsed the arguments of <code>filePath , par</code>, and validate the arguments, if it&rsquo;s not validate, stop everything but provide the help info.</p>
+
+<pre><code class="language-python">import sys
+argVars = sys.argv[1:]
+argFormatErrorFlag = True
+helpInfo = &quot;&quot;&quot;Usage:
+  novaConfParser.py [--input &lt;path-to-input-file&gt;] [--par &lt;par&gt;]
+Options:
+  --help       Show this help screen.
+Examples:
+  python3 novaConfParser.py --input /nova/nova.conf --par my_ip
+
+&quot;&quot;&quot;
+
+# parse parseArgVars
+def parseArgVars(argVars, flag):
+  # init for filePath, par
+  filePath, par = &quot;&quot;, &quot;&quot;
+  if len(argVars) == 4:
+    if &quot;--input&quot; and &quot;--par&quot; in [argVars[0], argVars[2]]:
+      # if in order: --input x --par y
+      filePath, par = argVars[1], argVars[3]
+      # argFormatErrorFlag is valid now
+      flag = False
+      # switch order if needed, in order: --par x --input y
+      if argVars[0] != &quot;--input&quot;:
+        filePath, par = par, filePath
+  return flag, filePath , par
+
+def parse(par,inputList):
+  valueForThePar = &quot;oops: there is no &quot; + par + &quot; found.&quot;
+  for line in inputList:
+    line = line.strip().split(&quot;=&quot;)
+    if par == line[0]:
+      valueForThePar = line[1]
+  return valueForThePar
+
+
+
+# main process
+def main(argVars, argFormatErrorFlag):
+    # parse arguments and validate them
+    argFormatErrorFlag, filePath, par = parseArgVars(argVars, argFormatErrorFlag)
+    # in case argFormatErrorFlag is True, end and print the help info
+    if argFormatErrorFlag:
+        print (helpInfo)
+        # End function without raise errors
+        return None
+
+    # ... something in between &lt;---------
+
+    print (parse(par,inputList))
+
+# run main function
+main(argVars, argFormatErrorFlag)
+</code></pre>
+
+<h3 id="read-file">Read file</h3>
+
+<p>Till now we have:</p>
+
+<ul>
+<li>arguments parsed in the begining by <code>parseArgVars</code></li>
+<li><code>#... something in between &lt;---------</code></li>
+<li><code>nova.conf</code> &rsquo;s handler <code>parse()</code> to deal with a <code>list()</code> input file</li>
+</ul>
+
+<p>What the only something left here is to read the <code>nova.conf</code> file and return it as list:</p>
+
+<pre><code class="language-python">def readInputFile(path):
+    # do things
+    return aListSplitedByLines
+</code></pre>
+
+<p>And it&rsquo;s easy:</p>
+
+<pre><code class="language-python">def readInputFile(path):
+    with open(path) as file:
+        fileStr = file.read()
+    return fileStr.split(&quot;\n&quot;)
+</code></pre>
+
+<h2 id="a-working-tool-was-done">A working tool was done!</h2>
+
+<p>And now we have the tool done:</p>
+
+<pre><code class="language-python">import sys
+argVars = sys.argv[1:]
+argFormatErrorFlag = True
+
+helpInfo = &quot;&quot;&quot;Usage:
+  novaConfParser.py [--input &lt;path-to-input-file&gt;] [--par &lt;par&gt;]
+Options:
+  --help       Show this help screen.
+Examples:
+  python3 novaConfParser.py --input /nova/nova.conf --par my_ip
+
+&quot;&quot;&quot;
+
+# parse parseArgVars
+def parseArgVars(argVars, flag):
+  # init for filePath, par
+  filePath, par = str(), str()
+  if len(argVars) == 4:
+    if &quot;--input&quot; and &quot;--par&quot; in [argVars[0], argVars[2]]:
+      # if in order: --input x --par y
+      filePath, par = argVars[1], argVars[3]
+      # argFormatErrorFlag is valid now
+      flag = False
+      # switch order if needed, in order: --par x --input y
+      if argVars[0] != &quot;--input&quot;:
+        filePath, par = par, filePath
+  return flag, filePath , par
+
+def parse(par,inputList):
+  valueForThePar = &quot;oops: there is no &quot; + par + &quot; found.&quot;
+  for line in inputList:
+    line = line.strip().split(&quot;=&quot;)
+    if par == line[0]:
+      valueForThePar = line[1]
+  return valueForThePar
+
+def readInputFile(path):
+  with open(path) as file:
+    fileStr = file.read()
+  return fileStr.split(&quot;\n&quot;)
+
+# main process
+def main(argVars, argFormatErrorFlag):
+  # parse arguments and validate them
+  argFormatErrorFlag, filePath, par = parseArgVars(argVars, argFormatErrorFlag)
+  # in case argFormatErrorFlag is True, end and print the help info
+  if argFormatErrorFlag:
+    print (helpInfo)
+    # End function without raise errors
+    return None
+  # Read file as a list
+  inputList = readInputFile(filePath)
+  # Build final output with parse()
+  output = parse(par,inputList)
+  # do the output
+  print (output)
+
+# run main function
+main(argVars, argFormatErrorFlag)
+</code></pre>
+
+<h2 id="can-we-make-life-easier">Can we make life easier?</h2>
+
+<p>Basically our tool is like:</p>
+
+<ul>
+<li>handling arguments parsed in the beginning by <code>parseArgVars</code></li>
+<li>Read file</li>
+<li>The function do handle main logic</li>
+</ul>
+
+<p>With the tool to enable more complex things possible, the parseArgVars part could be much crazy below are options you could use:</p>
+
+<ul>
+<li><code>argparse</code> ( <a href="https://docs.python.org/3/library/argparse.html">https://docs.python.org/3/library/argparse.html</a> )</li>
+<li><code>docopt</code> ( <a href="http://docopt.org">http://docopt.org</a> )</li>
+</ul>
+
+<p>Let&rsquo;s take <code>docopt</code> as an example</p>
+
+<h3 id="docopt-example">docopt example</h3>
+
+<p>ref: <a href="https://github.com/docopt/docopt/blob/master/examples/">https://github.com/docopt/docopt/blob/master/examples/</a></p>
+
+<p><code>novaConfParser_V2.py</code>:</p>
+
+<pre><code class="language-python">&quot;&quot;&quot;Usage:
+  novaConfParser_V2.py [--input &lt;path-to-input-file&gt;] [--par &lt;par&gt;]
+
+Options:
+  --help       Show this help screen.
+
+Examples:
+  python3 novaConfParser.py --input /nova/nova.conf --par my_ip
+&quot;&quot;&quot;
+from docopt import docopt
+
+
+if __name__ == '__main__':
+    arguments = docopt(__doc__, version='0.1.1rc')
+    print(arguments)
+</code></pre>
+
+<p>Let&rsquo;s verify it:</p>
+
+<p>It&rsquo;s doing thins magically good, we could see in this single example, <code>arguments</code> is a <code>dict</code>, which is actually covering the argument parse and validation.</p>
+
+<pre><code class="language-bash">$ python3 novaConfParser_V2.py
+{'--input': False,
+ '--par': False,
+ '&lt;par&gt;': None,
+ '&lt;path-to-input-file&gt;': None}
+
+$ python3 novaConfParser_V2.py --input /nova/nova.conf --par my_ip
+{'--input': True,
+ '--par': True,
+ '&lt;par&gt;': 'my_ip',
+ '&lt;path-to-input-file&gt;': '/nova/nova.conf'}
+
+$ python3 novaConfParser_V2.py --help   
+Usage:
+  novaConfParser_V2.py [--input &lt;path-to-input-file&gt;] [--par &lt;par&gt;]
+
+Options:
+  -h --help       Show this help screen.
+
+Examples:
+  python3 novaConfParser_V2.py --input /nova/nova.conf --par my_ip
+
+$ python3 novaConfParser_V2.py --version
+0.1.1rc
+</code></pre>
+
+<p>We could directly use it as below:</p>
+
+<pre><code class="language-python">In [7]: arguments[&quot;--input&quot;]
+Out[7]: True
+
+In [8]: arguments = {'--input': True,
+   ...:  '--par': True,
+   ...:  '&lt;par&gt;': 'my_ip',
+   ...:  '&lt;path-to-input-file&gt;': '/nova/nova.conf'}
+   ...:  
+
+In [9]: arguments[&quot;--input&quot;]
+Out[9]: True
+
+In [10]: arguments['&lt;path-to-input-file&gt;']
+Out[10]: '/nova/nova.conf'
+</code></pre>
+
+<h2 id="what-else">What else?</h2>
+
+<ul>
+<li>Shebang ref: <a href="https://en.wikipedia.org/wiki/Shebang_%28Unix%293">https://en.wikipedia.org/wiki/Shebang_%28Unix%293</a></li>
+<li><code>virtualenv</code></li>
+<li>parse from or write to json, excel, xml, csv etc ?
+
+<ul>
+<li>built-in library: <a href="https://docs.python.org/3/library/index.html">https://docs.python.org/3/library/index.html</a></li>
+<li>Awesome Python: <a href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></li>
+</ul></li>
+<li>Doing things for servers? paramiko / ansible</li>
+<li>exceptions: <a href="http://www.runoob.com/python/python-exceptions.html">http://www.runoob.com/python/python-exceptions.html</a></li>
+</ul>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/tasks/task-0/" title="Build a cli Tool"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/tasks/task-0/video/" title="Video: Build a cli Tool" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1518180202"></script>
+    <script src="/js/perfect-scrollbar.min.js?1518180202"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1518180202"></script>
+    <script src="/js/jquery.sticky.js?1518180202"></script>
+    <script src="/js/featherlight.min.js?1518180202"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1518180202"></script>
+    <script src="/js/highlight.pack.js?1518180202"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1518180202"></script>
+    <script src="/js/learn.js?1518180202"></script>
+    <script src="/js/hugo-learn.js?1518180202"></script>
+
+    <link href="/mermaid/mermaid.css?1518180202" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1518180202"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Build a blockchain :: Python Bootcamp</title>
+    <title>Environment Setup :: Python Bootcamp</title>
     
     
     <link href="/css/nucleus.css?1518180202" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/tasks/task-2/">
+  <body class="" data-url="/preparation/preparation/">
     <nav id="sidebar" class="">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/preparation/" title="Preparation" class="dd-item 
-        
+        parent
         
         
         ">
@@ -100,7 +100,7 @@
  
   
     
-      <li data-nav-id="/preparation/preparation/" title="Environment Setup" class="dd-item ">
+      <li data-nav-id="/preparation/preparation/" title="Environment Setup" class="dd-item active">
         <a href="/preparation/preparation/">
         Environment Setup
         
@@ -127,7 +127,7 @@
   
     
     <li data-nav-id="/tasks/" title="Tasks" class="dd-item 
-        parent
+        
         
         
         ">
@@ -298,8 +298,8 @@
   
     
     <li data-nav-id="/tasks/task-2/" title="Build a blockchain" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/tasks/task-2/">
@@ -417,6 +417,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
                   <span class="links">
                     
           
@@ -429,7 +431,7 @@
             
           
           
-            <a href='/'></a> > <a href='/tasks/'>Tasks</a> > Build a blockchain
+            <a href='/'></a> > <a href='/preparation/'>Preparation</a> > Environment Setup
           
          
           
@@ -439,14 +441,34 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#environment-setup">Environment setup</a></li>
+<li><a href="#a-just-working-editor">A just working editor</a></li>
+<li><a href="#how-to-run-your-python-code">How to run your python code?</a></li>
+<li><a href="#go-through-the-tutor">Go through the tutor</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>Environment Setup</h1>
           
 
         
@@ -454,27 +476,82 @@
 
 
 
-<h3 id="learn-oop-blockchain-and-more">Learn OOP, Blockchain and More!</h3>
+<p>Slack channel: <a href="https://project-inno.slack.com/messages/C8Z6GEF16">#py-camp</a></p>
 
-<h1 id="build-a-blockchain">Build a Blockchain</h1>
+<h3 id="environment-setup">Environment setup</h3>
 
-<p>In this task, we will create a simple part of blockchain application like <code>bitcoin</code>.</p>
-
-<p>Things we will go though:</p>
+<p>a Linux VM (Ubuntu) will do, reference: <a href="https://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox">https://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox</a></p>
 
 <ul>
-<li>Some object-oriented coding (not just call class from a python module)</li>
-<li>http request</li>
-<li>flask as http api endpoints</li>
+<li>3G ram</li>
+<li>1-2 CPU</li>
 </ul>
+
+<h3 id="a-just-working-editor">A just working editor</h3>
+
+<p><code>Sublime text</code>/<code>Atom</code>/<code>VS code</code> will do the job, I was using <code>Sublime Text 3</code></p>
+
+<p>reference: <a href="http://tipsonubuntu.com/2017/05/30/install-sublime-text-3-ubuntu-16-04-official-way/">http://tipsonubuntu.com/2017/05/30/install-sublime-text-3-ubuntu-16-04-official-way/</a></p>
+
+<h3 id="how-to-run-your-python-code">How to run your python code?</h3>
+
+<p><strong>Preparation</strong>:</p>
+
+<p>to avoid anything stops you from the beginning let&rsquo;s just use python3 directly, if you know how to use <code>virtualenv</code>, use it instead, if you don&rsquo;t know <code>virtualenv</code> do it as below.</p>
+
+<ul>
+<li>install pip for python3, upgrade it then:</li>
+</ul>
+
+<pre><code class="language-bash">$ sudo apt-get install python3-pip -y
+$ sudo pip3 install --upgrade pip
+</code></pre>
+
+<ul>
+<li>install <code>ipython</code> as your python playground console</li>
+</ul>
+
+<pre><code class="language-bash">$ sudo pip3 install ipython
+</code></pre>
+
+<p><strong>Hello world!</strong> from ipython</p>
+
+<p>You could use it in one terminal for debugging for always, it&rsquo;s better than the python console in some ways.</p>
+
+<pre><code class="language-shell">$ ipython3
+Python 3.5.2 (default, Nov 23 2017, 16:37:01)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.2.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: print (&quot;hello world!&quot;)
+hello world!
+In [2]: exit
+$
+</code></pre>
+
+<p><strong>Hello world!</strong> from your first python script</p>
+
+<pre><code class="language-shell">$ cat hello_world.py
+print (&quot;Hello world!&quot;)
+
+$ python3 hello_world.py
+Hello world!
+</code></pre>
+
+<p>Congratulations! One more step left:</p>
+
+<h3 id="go-through-the-tutor">Go through the tutor</h3>
+
+<p>reference: <a href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial/</a></p>
+
+<p>or: <a href="http://www.pythondoc.com/pythontutorial3/">http://www.pythondoc.com/pythontutorial3/</a></p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -506,8 +583,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -521,6 +596,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -541,6 +617,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -556,9 +634,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -656,7 +731,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -670,9 +744,6 @@
             
                 
                     
-                        
-                        
-                    
                 
                 
 
@@ -713,10 +784,10 @@
 
 
         
-            <a class="nav nav-prev" href="/tasks/task-1/video/" title="Video: Build a web Tool"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/preparation/" title="Preparation"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/tasks/task-2/task-2/" title="Keynote: Build a blockchain" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/tasks/" title="Tasks" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -746,3 +817,4 @@
 
   </body>
 </html>
+
