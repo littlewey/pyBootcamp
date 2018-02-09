@@ -1,0 +1,53 @@
+echo "From node: " $clientHost
+
+echo " ┌───────────────────────────────────────────┐"
+echo " │ Please enter your sender address:         │"
+echo " └───────────────────────────────────────────┘"
+read sender
+
+echo " ┌───────────────────────────────────────────┐"
+echo " │ Please enter recipient address:           │"
+echo " └───────────────────────────────────────────┘"
+
+read recipient
+
+echo " ┌───────────────────────────────────────────┐"
+echo " │ Please enter transaction amount:          │"
+echo " └───────────────────────────────────────────┘"
+read amount
+
+echo " ┌───────────────────────────────────────────┐"
+echo " │ Please enter transaction signature:       │"
+echo " └───────────────────────────────────────────┘"
+read signature
+
+curl -X POST -H "Content-Type: application/json" -d "{  \"sender\": \"$sender\", \"recipient\": \"$recipient\", \"amount\": \"$amount\", \"signature\": \"$signature\" }" $clientHost/transactions/new
+
+
+
+
+
+echo " ┌────────┬──────────────────────────────────┐"
+echo " │ From   │ " $clientHost         "          │"
+echo " ├────────┼──────────────────────────────────┤"
+echo " │ Action │  Send Transactions               │"
+echo " └────────┴──────────────────────────────────┘"
+
+transactions
+
+Sender=`echo $sender | cut -c1-23`
+echo " ┌───────────────────────────────────────────┐"
+echo " │ Please enter transaction signature:       │"
+echo " └───────────────────────────────────────────┘"
+echo " ┌───────────┬───────────────────────────────┐"
+echo " │ Sender    │" $Sender               "...   │"
+echo " ├───────────┼───────────────────────────────┤"
+Recipient=`echo $recipient | cut -c1-23`
+echo " │ Recipient │" $Recipient            "...   │"
+echo " ├───────────┼───────────────────────────────┤"
+echo " │ Amount    │" $amount "                            │"
+echo " ├───────────┼───────────────────────────────┤"
+Signature=`echo $signature | cut -c1-23`
+echo " │ Signature │" $Signature            "...   │"
+echo " └───────────┴───────────────────────────────┘"
+

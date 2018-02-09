@@ -1,0 +1,13 @@
+echo " ┌───────────────────────────────────────────┐"
+echo " │ Please enter your Blockchain address:     │"
+echo " ├────────┬──────────────────────────────────┤"
+read -sr clientHost
+export clientHost=$clientHost
+PS1='\[\e[1;35m\]node.py:\[\e[1;32m\]@\[\e[1;34m\]$clientHost \$\[\e[m\] '
+PATH=$PATH:$(pwd)
+echo " │ From   │ " $clientHost         "          │"
+echo " ├────────┼──────────────────────────────────┤"
+echo " │ Action │  Initiated client                │"
+echo " └────────┴──────────────────────────────────┘"
+
+

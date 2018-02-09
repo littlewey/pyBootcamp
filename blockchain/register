@@ -1,0 +1,14 @@
+echo " ┌────────┬──────────────────────────────────┐"
+echo " │ From   │ " $clientHost         "          │"
+echo " ├────────┼──────────────────────────────────┤"
+echo " │ Action │  Add Neighbor node               │"
+echo " └────────┴──────────────────────────────────┘"
+read node
+echo " ┌───────────────────────────────────────────┐"
+echo " │              Node added                   │"
+echo " ├───────────────────────────────────────────┤"
+echo "─╯                                           ╰─"
+curl -X POST -H "Content-Type: application/json" -d "{ \"nodes\": [\"$node\"] }" $clientHost/nodes/register
+echo "─╮                                           ╭─"
+echo " └───────────────────────────────────────────┘"
+
