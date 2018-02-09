@@ -1,6 +1,6 @@
 # Task 2, create a blockchain
 
-> Our task demo is highly reusing code and even some words in https://hackernoon.com/learn-blockchains-by-building-one-117428612f46 (many thanks to the owner of that blog), but enhancements were added on top of that here.
+> Our task demo is highly reusing code and even some words in https://hackernoon.com/learn-blockchains-by-building-one-117428612f46 (many thanks to [Daniel van Flymen](https://hackernoon.com/@vanflymen?source=post_header_lockup)), some enhancements were added on top of that here including sender address verification, and some script clients.
 
 In this task, we will create a simple part of blockchain application like `bitcoin`. 
 
