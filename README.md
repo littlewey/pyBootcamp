@@ -12,7 +12,7 @@ draft: false
 
 ### Workshop Video
 
-`\\***REMOVED***\Usertmp$\pyCamp\Video`
+`\\dummy\Usertmp$\pyCamp\Video`
 
 ### Workshop Keynotes and Codes
 
