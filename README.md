@@ -20,14 +20,12 @@ draft: false
 
 ###
 
-| Time | Task                                     | Outcome                                  |
-| :--- | ---------------------------------------- | ---------------------------------------- |
-| W0   | Prepare environment, join the slack channel for discussion or learn from historical discussion. | A ready to use python envrionment.       |
-| W1   | Task 0, build a cli tool                 | Learn basic concept, build a command line tool, run it. |
-|      | Task 1, build a web application.         | Reach more python concepts, build a website, build a webapp with same function of task |
-|      | Task 2, build a blockchain.              | Start building your first OOP python project, organize a bigger flask project. |
-| W2   | Task 3, build a microservice project     | TBD                                      |
-|      | Task 4, build an openstack project       | TBD                                      |
+| Time | Task                                                         | Outcome                                                      |
+| :--- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| W0   | Prepare environment, join the slack channel for discussion or learn from historical discussion. | A ready to use python envrionment.                           |
+| W1   | Task 0, build a cli tool                                     | Learn basic concept, build a command line tool, run it.      |
+|      | Task 1, build a web application.                             | Reach more python concepts, build a website, build a webapp with same function of task |
+|      | Task 2, build a blockchain.                                  | Start building your first OOP python project, organize a bigger flask project. |
 
 
 
